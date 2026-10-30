@@ -15,7 +15,7 @@
 html,body{margin:0;padding:0;background:var(--bg);color:var(--ink)}
 body{hyphens:auto;-webkit-hyphens:auto;-ms-hyphens:auto;font-family:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;font-weight:400;line-height:1.5;-webkit-font-smoothing:antialiased;-webkit-text-size-adjust:100%;overflow-wrap:break-word}
 :focus-visible{outline:3px solid var(--focus);outline-offset:2px}
-.sr{position:absolute;opacity:0;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);pointer-events:none}
+.sr{position:fixed;top:0;left:0;opacity:0;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);pointer-events:none;margin:0;border:0}
 .wrap{max-width:1040px;margin:0 auto;padding:0 24px;container-type:inline-size}
 main{padding:28px 0 40px}
 h1,.detail-title{font-weight:800;letter-spacing:-0.02em;color:var(--brand)}
@@ -3127,21 +3127,6 @@ footer.note{font-size:.78rem;color:var(--muted);margin-top:18px;line-height:1.6}
     </div>
   </div>
   <div class="panel">
-    <h3 class="section">Entwicklung zum Vorjahr</h3>
-    <p class="hint">Vergleich 2024 und 2025. Gemeindesteuern brutto.</p>
-    <table class="cmpt">
-      <thead><tr><th>Kennzahl</th><th>2024</th><th>2025</th><th>Veränderung</th></tr></thead>
-      <tbody>
-        <tr><td>Gemeindesteuern</td><td>11,4 Mio. €</td><td>12,7 Mio. €</td><td class="up">+10,7 %</td></tr>
-        <tr><td>Pro Einwohner</td><td>738 €</td><td>822 €</td><td>+11,4 %</td></tr>
-        <tr><td>Einwohner</td><td>15.502</td><td>15.405</td><td>&minus;0,6 %</td></tr>
-        <tr><td>Hebesatz Grundsteuer A</td><td>390 %</td><td>450 %</td><td>+60 Pkt.</td></tr>
-        <tr><td>Hebesatz Grundsteuer B</td><td>460 %</td><td>370 %</td><td>&minus;90 Pkt.</td></tr>
-        <tr><td>Hebesatz Gewerbesteuer</td><td>440 %</td><td>500 %</td><td>+60 Pkt.</td></tr>
-      </tbody>
-    </table>
-  </div>
-  <div class="panel">
     <h3 class="section">Einordnung im Saarland</h3>
     <p class="rank" style="font-size:.95rem"><strong>Beckingen</strong> liegt beim Steueraufkommen pro Kopf im Saarland mit 822 € auf dem <strong>45. Platz</strong> von 52 Kommunen, 42,3 % unter dem Landesschnitt von 1.424 €.</p>
     <p class="hint">Gemeindesteuern pro Einwohner, alle 52 Kommunen. Kommune anklicken, um sie anzuzeigen.</p>
@@ -3182,21 +3167,6 @@ footer.note{font-size:.78rem;color:var(--muted);margin-top:18px;line-height:1.6}
       <p class="hint" style="margin-top:12px">Der Hebesatz legt fest, wie viel Steuer auf die Grundlage entfällt. Die Kommune setzt ihn selbst fest. Hebesatz anklicken, um das Rechenbeispiel zu sehen.</p>
       <div class="example ex-grA"><p class="ex-title">Grundsteuer A</p><p>Eigentümer land- und forstwirtschaftlicher Flächen zahlen diese Steuer. Die Kommune legt den Hebesatz fest, mit dem der Steuermessbetrag multipliziert wird.</p></div><div class="example ex-grB"><p class="ex-title">Grundsteuer B</p><p>Eigentümer bebauter und unbebauter Grundstücke zahlen diese Steuer, Mieter meist über die Nebenkosten. Die Kommune legt den Hebesatz fest, mit dem der Steuermessbetrag multipliziert wird.</p></div><div class="example ex-gewSt"><p class="ex-title">Gewerbesteuer</p><p>Unternehmen mit Gewerbebetrieb zahlen sie, abhängig von ihrem Gewinn. Die Kommune legt den Hebesatz fest; die Angabe auf dieser Seite ist vor der Gewerbesteuerumlage.</p></div>
     </div>
-  </div>
-  <div class="panel">
-    <h3 class="section">Entwicklung zum Vorjahr</h3>
-    <p class="hint">Vergleich 2024 und 2025. Gemeindesteuern brutto.</p>
-    <table class="cmpt">
-      <thead><tr><th>Kennzahl</th><th>2024</th><th>2025</th><th>Veränderung</th></tr></thead>
-      <tbody>
-        <tr><td>Gemeindesteuern</td><td>28,2 Mio. €</td><td>26,0 Mio. €</td><td class="down">&minus;7,7 %</td></tr>
-        <tr><td>Pro Einwohner</td><td>1.578 €</td><td>1.468 €</td><td>&minus;7,0 %</td></tr>
-        <tr><td>Einwohner</td><td>17.857</td><td>17.710</td><td>&minus;0,8 %</td></tr>
-        <tr><td>Hebesatz Grundsteuer A</td><td>300 %</td><td>290 %</td><td>&minus;10 Pkt.</td></tr>
-        <tr><td>Hebesatz Grundsteuer B</td><td>470 %</td><td>470 %</td><td>±0 Pkt.</td></tr>
-        <tr><td>Hebesatz Gewerbesteuer</td><td>445 %</td><td>445 %</td><td>±0 Pkt.</td></tr>
-      </tbody>
-    </table>
   </div>
   <div class="panel">
     <h3 class="section">Einordnung im Saarland</h3>
@@ -3241,21 +3211,6 @@ footer.note{font-size:.78rem;color:var(--muted);margin-top:18px;line-height:1.6}
     </div>
   </div>
   <div class="panel">
-    <h3 class="section">Entwicklung zum Vorjahr</h3>
-    <p class="hint">Vergleich 2024 und 2025. Gemeindesteuern brutto.</p>
-    <table class="cmpt">
-      <thead><tr><th>Kennzahl</th><th>2024</th><th>2025</th><th>Veränderung</th></tr></thead>
-      <tbody>
-        <tr><td>Gemeindesteuern</td><td>34,9 Mio. €</td><td>29,8 Mio. €</td><td class="down">&minus;14,7 %</td></tr>
-        <tr><td>Pro Einwohner</td><td>1.725 €</td><td>1.484 €</td><td>&minus;14,0 %</td></tr>
-        <tr><td>Einwohner</td><td>20.237</td><td>20.067</td><td>&minus;0,8 %</td></tr>
-        <tr><td>Hebesatz Grundsteuer A</td><td>350 %</td><td>350 %</td><td>±0 Pkt.</td></tr>
-        <tr><td>Hebesatz Grundsteuer B</td><td>560 %</td><td>495 %</td><td>&minus;65 Pkt.</td></tr>
-        <tr><td>Hebesatz Gewerbesteuer</td><td>425 %</td><td>425 %</td><td>±0 Pkt.</td></tr>
-      </tbody>
-    </table>
-  </div>
-  <div class="panel">
     <h3 class="section">Einordnung im Saarland</h3>
     <p class="rank" style="font-size:.95rem"><strong>Blieskastel</strong> liegt beim Steueraufkommen pro Kopf im Saarland mit 1.484 € auf dem <strong>15. Platz</strong> von 52 Kommunen, 4,2 % über dem Landesschnitt von 1.424 €.</p>
     <p class="hint">Gemeindesteuern pro Einwohner, alle 52 Kommunen. Kommune anklicken, um sie anzuzeigen.</p>
@@ -3296,21 +3251,6 @@ footer.note{font-size:.78rem;color:var(--muted);margin-top:18px;line-height:1.6}
       <p class="hint" style="margin-top:12px">Der Hebesatz legt fest, wie viel Steuer auf die Grundlage entfällt. Die Kommune setzt ihn selbst fest. Hebesatz anklicken, um das Rechenbeispiel zu sehen.</p>
       <div class="example ex-grA"><p class="ex-title">Grundsteuer A</p><p>Eigentümer land- und forstwirtschaftlicher Flächen zahlen diese Steuer. Die Kommune legt den Hebesatz fest, mit dem der Steuermessbetrag multipliziert wird.</p></div><div class="example ex-grB"><p class="ex-title">Grundsteuer B</p><p>Eigentümer bebauter und unbebauter Grundstücke zahlen diese Steuer, Mieter meist über die Nebenkosten. Die Kommune legt den Hebesatz fest, mit dem der Steuermessbetrag multipliziert wird.</p></div><div class="example ex-gewSt"><p class="ex-title">Gewerbesteuer</p><p>Unternehmen mit Gewerbebetrieb zahlen sie, abhängig von ihrem Gewinn. Die Kommune legt den Hebesatz fest; die Angabe auf dieser Seite ist vor der Gewerbesteuerumlage.</p></div>
     </div>
-  </div>
-  <div class="panel">
-    <h3 class="section">Entwicklung zum Vorjahr</h3>
-    <p class="hint">Vergleich 2024 und 2025. Gemeindesteuern brutto.</p>
-    <table class="cmpt">
-      <thead><tr><th>Kennzahl</th><th>2024</th><th>2025</th><th>Veränderung</th></tr></thead>
-      <tbody>
-        <tr><td>Gemeindesteuern</td><td>8,1 Mio. €</td><td>8,6 Mio. €</td><td class="up">+6,8 %</td></tr>
-        <tr><td>Pro Einwohner</td><td>1.127 €</td><td>1.183 €</td><td>+5,0 %</td></tr>
-        <tr><td>Einwohner</td><td>7.162</td><td>7.286</td><td>+1,7 %</td></tr>
-        <tr><td>Hebesatz Grundsteuer A</td><td>275 %</td><td>300 %</td><td>+25 Pkt.</td></tr>
-        <tr><td>Hebesatz Grundsteuer B</td><td>380 %</td><td>420 %</td><td>+40 Pkt.</td></tr>
-        <tr><td>Hebesatz Gewerbesteuer</td><td>420 %</td><td>420 %</td><td>±0 Pkt.</td></tr>
-      </tbody>
-    </table>
   </div>
   <div class="panel">
     <h3 class="section">Einordnung im Saarland</h3>
@@ -3355,21 +3295,6 @@ footer.note{font-size:.78rem;color:var(--muted);margin-top:18px;line-height:1.6}
     </div>
   </div>
   <div class="panel">
-    <h3 class="section">Entwicklung zum Vorjahr</h3>
-    <p class="hint">Vergleich 2024 und 2025. Gemeindesteuern brutto.</p>
-    <table class="cmpt">
-      <thead><tr><th>Kennzahl</th><th>2024</th><th>2025</th><th>Veränderung</th></tr></thead>
-      <tbody>
-        <tr><td>Gemeindesteuern</td><td>48,9 Mio. €</td><td>48,3 Mio. €</td><td class="down">&minus;1,2 %</td></tr>
-        <tr><td>Pro Einwohner</td><td>2.268 €</td><td>2.261 €</td><td>&minus;0,3 %</td></tr>
-        <tr><td>Einwohner</td><td>21.560</td><td>21.371</td><td>&minus;0,9 %</td></tr>
-        <tr><td>Hebesatz Grundsteuer A</td><td>255 %</td><td>280 %</td><td>+25 Pkt.</td></tr>
-        <tr><td>Hebesatz Grundsteuer B</td><td>410 %</td><td>450 %</td><td>+40 Pkt.</td></tr>
-        <tr><td>Hebesatz Gewerbesteuer</td><td>420 %</td><td>450 %</td><td>+30 Pkt.</td></tr>
-      </tbody>
-    </table>
-  </div>
-  <div class="panel">
     <h3 class="section">Einordnung im Saarland</h3>
     <p class="rank" style="font-size:.95rem"><strong>Dillingen/Saar</strong> liegt beim Steueraufkommen pro Kopf im Saarland mit 2.261 € auf dem <strong>3. Platz</strong> von 52 Kommunen, 58,7 % über dem Landesschnitt von 1.424 €.</p>
     <p class="hint">Gemeindesteuern pro Einwohner, alle 52 Kommunen. Kommune anklicken, um sie anzuzeigen.</p>
@@ -3410,21 +3335,6 @@ footer.note{font-size:.78rem;color:var(--muted);margin-top:18px;line-height:1.6}
       <p class="hint" style="margin-top:12px">Der Hebesatz legt fest, wie viel Steuer auf die Grundlage entfällt. Die Kommune setzt ihn selbst fest. Hebesatz anklicken, um das Rechenbeispiel zu sehen.</p>
       <div class="example ex-grA"><p class="ex-title">Grundsteuer A</p><p>Eigentümer land- und forstwirtschaftlicher Flächen zahlen diese Steuer. Die Kommune legt den Hebesatz fest, mit dem der Steuermessbetrag multipliziert wird.</p></div><div class="example ex-grB"><p class="ex-title">Grundsteuer B</p><p>Eigentümer bebauter und unbebauter Grundstücke zahlen diese Steuer, Mieter meist über die Nebenkosten. Die Kommune legt den Hebesatz fest, mit dem der Steuermessbetrag multipliziert wird.</p></div><div class="example ex-gewSt"><p class="ex-title">Gewerbesteuer</p><p>Unternehmen mit Gewerbebetrieb zahlen sie, abhängig von ihrem Gewinn. Die Kommune legt den Hebesatz fest; die Angabe auf dieser Seite ist vor der Gewerbesteuerumlage.</p></div>
     </div>
-  </div>
-  <div class="panel">
-    <h3 class="section">Entwicklung zum Vorjahr</h3>
-    <p class="hint">Vergleich 2024 und 2025. Gemeindesteuern brutto.</p>
-    <table class="cmpt">
-      <thead><tr><th>Kennzahl</th><th>2024</th><th>2025</th><th>Veränderung</th></tr></thead>
-      <tbody>
-        <tr><td>Gemeindesteuern</td><td>7,7 Mio. €</td><td>10,6 Mio. €</td><td class="up">+38,3 %</td></tr>
-        <tr><td>Pro Einwohner</td><td>1.114 €</td><td>1.539 €</td><td>+38,2 %</td></tr>
-        <tr><td>Einwohner</td><td>6.900</td><td>6.908</td><td>+0,1 %</td></tr>
-        <tr><td>Hebesatz Grundsteuer A</td><td>270 %</td><td>370 %</td><td>+100 Pkt.</td></tr>
-        <tr><td>Hebesatz Grundsteuer B</td><td>465 %</td><td>630 %</td><td>+165 Pkt.</td></tr>
-        <tr><td>Hebesatz Gewerbesteuer</td><td>430 %</td><td>440 %</td><td>+10 Pkt.</td></tr>
-      </tbody>
-    </table>
   </div>
   <div class="panel">
     <h3 class="section">Einordnung im Saarland</h3>
@@ -3469,21 +3379,6 @@ footer.note{font-size:.78rem;color:var(--muted);margin-top:18px;line-height:1.6}
     </div>
   </div>
   <div class="panel">
-    <h3 class="section">Entwicklung zum Vorjahr</h3>
-    <p class="hint">Vergleich 2024 und 2025. Gemeindesteuern brutto.</p>
-    <table class="cmpt">
-      <thead><tr><th>Kennzahl</th><th>2024</th><th>2025</th><th>Veränderung</th></tr></thead>
-      <tbody>
-        <tr><td>Gemeindesteuern</td><td>15,9 Mio. €</td><td>15,3 Mio. €</td><td class="down">&minus;3,5 %</td></tr>
-        <tr><td>Pro Einwohner</td><td>951 €</td><td>919 €</td><td>&minus;3,4 %</td></tr>
-        <tr><td>Einwohner</td><td>16.671</td><td>16.641</td><td>&minus;0,2 %</td></tr>
-        <tr><td>Hebesatz Grundsteuer A</td><td>300 %</td><td>300 %</td><td>±0 Pkt.</td></tr>
-        <tr><td>Hebesatz Grundsteuer B</td><td>470 %</td><td>430 %</td><td>&minus;40 Pkt.</td></tr>
-        <tr><td>Hebesatz Gewerbesteuer</td><td>425 %</td><td>425 %</td><td>±0 Pkt.</td></tr>
-      </tbody>
-    </table>
-  </div>
-  <div class="panel">
     <h3 class="section">Einordnung im Saarland</h3>
     <p class="rank" style="font-size:.95rem"><strong>Eppelborn</strong> liegt beim Steueraufkommen pro Kopf im Saarland mit 919 € auf dem <strong>38. Platz</strong> von 52 Kommunen, 35,5 % unter dem Landesschnitt von 1.424 €.</p>
     <p class="hint">Gemeindesteuern pro Einwohner, alle 52 Kommunen. Kommune anklicken, um sie anzuzeigen.</p>
@@ -3524,21 +3419,6 @@ footer.note{font-size:.78rem;color:var(--muted);margin-top:18px;line-height:1.6}
       <p class="hint" style="margin-top:12px">Der Hebesatz legt fest, wie viel Steuer auf die Grundlage entfällt. Die Kommune setzt ihn selbst fest. Hebesatz anklicken, um das Rechenbeispiel zu sehen.</p>
       <div class="example ex-grA"><p class="ex-title">Grundsteuer A</p><p>Eigentümer land- und forstwirtschaftlicher Flächen zahlen diese Steuer. Die Kommune legt den Hebesatz fest, mit dem der Steuermessbetrag multipliziert wird.</p></div><div class="example ex-grB"><p class="ex-title">Grundsteuer B</p><p>Eigentümer bebauter und unbebauter Grundstücke zahlen diese Steuer, Mieter meist über die Nebenkosten. Die Kommune legt den Hebesatz fest, mit dem der Steuermessbetrag multipliziert wird.</p></div><div class="example ex-gewSt"><p class="ex-title">Gewerbesteuer</p><p>Unternehmen mit Gewerbebetrieb zahlen sie, abhängig von ihrem Gewinn. Die Kommune legt den Hebesatz fest; die Angabe auf dieser Seite ist vor der Gewerbesteuerumlage.</p></div>
     </div>
-  </div>
-  <div class="panel">
-    <h3 class="section">Entwicklung zum Vorjahr</h3>
-    <p class="hint">Vergleich 2024 und 2025. Gemeindesteuern brutto.</p>
-    <table class="cmpt">
-      <thead><tr><th>Kennzahl</th><th>2024</th><th>2025</th><th>Veränderung</th></tr></thead>
-      <tbody>
-        <tr><td>Gemeindesteuern</td><td>28,8 Mio. €</td><td>22,4 Mio. €</td><td class="down">&minus;22,5 %</td></tr>
-        <tr><td>Pro Einwohner</td><td>3.573 €</td><td>2.756 €</td><td>&minus;22,9 %</td></tr>
-        <tr><td>Einwohner</td><td>8.075</td><td>8.113</td><td>+0,5 %</td></tr>
-        <tr><td>Hebesatz Grundsteuer A</td><td>300 %</td><td>300 %</td><td>±0 Pkt.</td></tr>
-        <tr><td>Hebesatz Grundsteuer B</td><td>390 %</td><td>370 %</td><td>&minus;20 Pkt.</td></tr>
-        <tr><td>Hebesatz Gewerbesteuer</td><td>425 %</td><td>425 %</td><td>±0 Pkt.</td></tr>
-      </tbody>
-    </table>
   </div>
   <div class="panel">
     <h3 class="section">Einordnung im Saarland</h3>
@@ -3583,21 +3463,6 @@ footer.note{font-size:.78rem;color:var(--muted);margin-top:18px;line-height:1.6}
     </div>
   </div>
   <div class="panel">
-    <h3 class="section">Entwicklung zum Vorjahr</h3>
-    <p class="hint">Vergleich 2024 und 2025. Gemeindesteuern brutto.</p>
-    <table class="cmpt">
-      <thead><tr><th>Kennzahl</th><th>2024</th><th>2025</th><th>Veränderung</th></tr></thead>
-      <tbody>
-        <tr><td>Gemeindesteuern</td><td>9,9 Mio. €</td><td>10,4 Mio. €</td><td class="up">+5,8 %</td></tr>
-        <tr><td>Pro Einwohner</td><td>971 €</td><td>1.035 €</td><td>+6,6 %</td></tr>
-        <tr><td>Einwohner</td><td>10.163</td><td>10.095</td><td>&minus;0,7 %</td></tr>
-        <tr><td>Hebesatz Grundsteuer A</td><td>300 %</td><td>300 %</td><td>±0 Pkt.</td></tr>
-        <tr><td>Hebesatz Grundsteuer B</td><td>460 %</td><td>460 %</td><td>±0 Pkt.</td></tr>
-        <tr><td>Hebesatz Gewerbesteuer</td><td>455 %</td><td>455 %</td><td>±0 Pkt.</td></tr>
-      </tbody>
-    </table>
-  </div>
-  <div class="panel">
     <h3 class="section">Einordnung im Saarland</h3>
     <p class="rank" style="font-size:.95rem"><strong>Friedrichsthal</strong> liegt beim Steueraufkommen pro Kopf im Saarland mit 1.035 € auf dem <strong>28. Platz</strong> von 52 Kommunen, 27,3 % unter dem Landesschnitt von 1.424 €.</p>
     <p class="hint">Gemeindesteuern pro Einwohner, alle 52 Kommunen. Kommune anklicken, um sie anzuzeigen.</p>
@@ -3638,21 +3503,6 @@ footer.note{font-size:.78rem;color:var(--muted);margin-top:18px;line-height:1.6}
       <p class="hint" style="margin-top:12px">Der Hebesatz legt fest, wie viel Steuer auf die Grundlage entfällt. Die Kommune setzt ihn selbst fest. Hebesatz anklicken, um das Rechenbeispiel zu sehen.</p>
       <div class="example ex-grA"><p class="ex-title">Grundsteuer A</p><p>Eigentümer land- und forstwirtschaftlicher Flächen zahlen diese Steuer. Die Kommune legt den Hebesatz fest, mit dem der Steuermessbetrag multipliziert wird.</p></div><div class="example ex-grB"><p class="ex-title">Grundsteuer B</p><p>Eigentümer bebauter und unbebauter Grundstücke zahlen diese Steuer, Mieter meist über die Nebenkosten. Die Kommune legt den Hebesatz fest, mit dem der Steuermessbetrag multipliziert wird.</p></div><div class="example ex-gewSt"><p class="ex-title">Gewerbesteuer</p><p>Unternehmen mit Gewerbebetrieb zahlen sie, abhängig von ihrem Gewinn. Die Kommune legt den Hebesatz fest; die Angabe auf dieser Seite ist vor der Gewerbesteuerumlage.</p></div>
     </div>
-  </div>
-  <div class="panel">
-    <h3 class="section">Entwicklung zum Vorjahr</h3>
-    <p class="hint">Vergleich 2024 und 2025. Gemeindesteuern brutto.</p>
-    <table class="cmpt">
-      <thead><tr><th>Kennzahl</th><th>2024</th><th>2025</th><th>Veränderung</th></tr></thead>
-      <tbody>
-        <tr><td>Gemeindesteuern</td><td>5,4 Mio. €</td><td>5,3 Mio. €</td><td class="down">&minus;2,1 %</td></tr>
-        <tr><td>Pro Einwohner</td><td>862 €</td><td>844 €</td><td>&minus;2,1 %</td></tr>
-        <tr><td>Einwohner</td><td>6.232</td><td>6.232</td><td>±0,0 %</td></tr>
-        <tr><td>Hebesatz Grundsteuer A</td><td>400 %</td><td>400 %</td><td>±0 Pkt.</td></tr>
-        <tr><td>Hebesatz Grundsteuer B</td><td>680 %</td><td>635 %</td><td>&minus;45 Pkt.</td></tr>
-        <tr><td>Hebesatz Gewerbesteuer</td><td>430 %</td><td>430 %</td><td>±0 Pkt.</td></tr>
-      </tbody>
-    </table>
   </div>
   <div class="panel">
     <h3 class="section">Einordnung im Saarland</h3>
@@ -3697,21 +3547,6 @@ footer.note{font-size:.78rem;color:var(--muted);margin-top:18px;line-height:1.6}
     </div>
   </div>
   <div class="panel">
-    <h3 class="section">Entwicklung zum Vorjahr</h3>
-    <p class="hint">Vergleich 2024 und 2025. Gemeindesteuern brutto.</p>
-    <table class="cmpt">
-      <thead><tr><th>Kennzahl</th><th>2024</th><th>2025</th><th>Veränderung</th></tr></thead>
-      <tbody>
-        <tr><td>Gemeindesteuern</td><td>7,2 Mio. €</td><td>7,5 Mio. €</td><td class="up">+4,3 %</td></tr>
-        <tr><td>Pro Einwohner</td><td>918 €</td><td>952 €</td><td>+3,7 %</td></tr>
-        <tr><td>Einwohner</td><td>7.817</td><td>7.858</td><td>+0,5 %</td></tr>
-        <tr><td>Hebesatz Grundsteuer A</td><td>300 %</td><td>300 %</td><td>±0 Pkt.</td></tr>
-        <tr><td>Hebesatz Grundsteuer B</td><td>470 %</td><td>470 %</td><td>±0 Pkt.</td></tr>
-        <tr><td>Hebesatz Gewerbesteuer</td><td>450 %</td><td>450 %</td><td>±0 Pkt.</td></tr>
-      </tbody>
-    </table>
-  </div>
-  <div class="panel">
     <h3 class="section">Einordnung im Saarland</h3>
     <p class="rank" style="font-size:.95rem"><strong>Großrosseln</strong> liegt beim Steueraufkommen pro Kopf im Saarland mit 952 € auf dem <strong>36. Platz</strong> von 52 Kommunen, 33,2 % unter dem Landesschnitt von 1.424 €.</p>
     <p class="hint">Gemeindesteuern pro Einwohner, alle 52 Kommunen. Kommune anklicken, um sie anzuzeigen.</p>
@@ -3752,21 +3587,6 @@ footer.note{font-size:.78rem;color:var(--muted);margin-top:18px;line-height:1.6}
       <p class="hint" style="margin-top:12px">Der Hebesatz legt fest, wie viel Steuer auf die Grundlage entfällt. Die Kommune setzt ihn selbst fest. Hebesatz anklicken, um das Rechenbeispiel zu sehen.</p>
       <div class="example ex-grA"><p class="ex-title">Grundsteuer A</p><p>Eigentümer land- und forstwirtschaftlicher Flächen zahlen diese Steuer. Die Kommune legt den Hebesatz fest, mit dem der Steuermessbetrag multipliziert wird.</p></div><div class="example ex-grB"><p class="ex-title">Grundsteuer B</p><p>Eigentümer bebauter und unbebauter Grundstücke zahlen diese Steuer, Mieter meist über die Nebenkosten. Die Kommune legt den Hebesatz fest, mit dem der Steuermessbetrag multipliziert wird.</p></div><div class="example ex-gewSt"><p class="ex-title">Gewerbesteuer</p><p>Unternehmen mit Gewerbebetrieb zahlen sie, abhängig von ihrem Gewinn. Die Kommune legt den Hebesatz fest; die Angabe auf dieser Seite ist vor der Gewerbesteuerumlage.</p></div>
     </div>
-  </div>
-  <div class="panel">
-    <h3 class="section">Entwicklung zum Vorjahr</h3>
-    <p class="hint">Vergleich 2024 und 2025. Gemeindesteuern brutto.</p>
-    <table class="cmpt">
-      <thead><tr><th>Kennzahl</th><th>2024</th><th>2025</th><th>Veränderung</th></tr></thead>
-      <tbody>
-        <tr><td>Gemeindesteuern</td><td>16,4 Mio. €</td><td>17,2 Mio. €</td><td class="up">+4,8 %</td></tr>
-        <tr><td>Pro Einwohner</td><td>888 €</td><td>937 €</td><td>+5,5 %</td></tr>
-        <tr><td>Einwohner</td><td>18.503</td><td>18.377</td><td>&minus;0,7 %</td></tr>
-        <tr><td>Hebesatz Grundsteuer A</td><td>260 %</td><td>260 %</td><td>±0 Pkt.</td></tr>
-        <tr><td>Hebesatz Grundsteuer B</td><td>360 %</td><td>360 %</td><td>±0 Pkt.</td></tr>
-        <tr><td>Hebesatz Gewerbesteuer</td><td>428 %</td><td>428 %</td><td>±0 Pkt.</td></tr>
-      </tbody>
-    </table>
   </div>
   <div class="panel">
     <h3 class="section">Einordnung im Saarland</h3>
@@ -3811,21 +3631,6 @@ footer.note{font-size:.78rem;color:var(--muted);margin-top:18px;line-height:1.6}
     </div>
   </div>
   <div class="panel">
-    <h3 class="section">Entwicklung zum Vorjahr</h3>
-    <p class="hint">Vergleich 2024 und 2025. Gemeindesteuern brutto.</p>
-    <table class="cmpt">
-      <thead><tr><th>Kennzahl</th><th>2024</th><th>2025</th><th>Veränderung</th></tr></thead>
-      <tbody>
-        <tr><td>Gemeindesteuern</td><td>59,3 Mio. €</td><td>73,9 Mio. €</td><td class="up">+24,7 %</td></tr>
-        <tr><td>Pro Einwohner</td><td>1.371 €</td><td>1.707 €</td><td>+24,5 %</td></tr>
-        <tr><td>Einwohner</td><td>43.235</td><td>43.311</td><td>+0,2 %</td></tr>
-        <tr><td>Hebesatz Grundsteuer A</td><td>250 %</td><td>250 %</td><td>±0 Pkt.</td></tr>
-        <tr><td>Hebesatz Grundsteuer B</td><td>560 %</td><td>560 %</td><td>±0 Pkt.</td></tr>
-        <tr><td>Hebesatz Gewerbesteuer</td><td>475 %</td><td>475 %</td><td>±0 Pkt.</td></tr>
-      </tbody>
-    </table>
-  </div>
-  <div class="panel">
     <h3 class="section">Einordnung im Saarland</h3>
     <p class="rank" style="font-size:.95rem"><strong>Homburg</strong> liegt beim Steueraufkommen pro Kopf im Saarland mit 1.707 € auf dem <strong>8. Platz</strong> von 52 Kommunen, 19,8 % über dem Landesschnitt von 1.424 €.</p>
     <p class="hint">Gemeindesteuern pro Einwohner, alle 52 Kommunen. Kommune anklicken, um sie anzuzeigen.</p>
@@ -3866,21 +3671,6 @@ footer.note{font-size:.78rem;color:var(--muted);margin-top:18px;line-height:1.6}
       <p class="hint" style="margin-top:12px">Der Hebesatz legt fest, wie viel Steuer auf die Grundlage entfällt. Die Kommune setzt ihn selbst fest. Hebesatz anklicken, um das Rechenbeispiel zu sehen.</p>
       <div class="example ex-grA"><p class="ex-title">Grundsteuer A</p><p>Eigentümer land- und forstwirtschaftlicher Flächen zahlen diese Steuer. Die Kommune legt den Hebesatz fest, mit dem der Steuermessbetrag multipliziert wird.</p></div><div class="example ex-grB"><p class="ex-title">Grundsteuer B</p><p>Eigentümer bebauter und unbebauter Grundstücke zahlen diese Steuer, Mieter meist über die Nebenkosten. Die Kommune legt den Hebesatz fest, mit dem der Steuermessbetrag multipliziert wird.</p></div><div class="example ex-gewSt"><p class="ex-title">Gewerbesteuer</p><p>Unternehmen mit Gewerbebetrieb zahlen sie, abhängig von ihrem Gewinn. Die Kommune legt den Hebesatz fest; die Angabe auf dieser Seite ist vor der Gewerbesteuerumlage.</p></div>
     </div>
-  </div>
-  <div class="panel">
-    <h3 class="section">Entwicklung zum Vorjahr</h3>
-    <p class="hint">Vergleich 2024 und 2025. Gemeindesteuern brutto.</p>
-    <table class="cmpt">
-      <thead><tr><th>Kennzahl</th><th>2024</th><th>2025</th><th>Veränderung</th></tr></thead>
-      <tbody>
-        <tr><td>Gemeindesteuern</td><td>21,6 Mio. €</td><td>20,9 Mio. €</td><td class="down">&minus;3,3 %</td></tr>
-        <tr><td>Pro Einwohner</td><td>1.361 €</td><td>1.314 €</td><td>&minus;3,5 %</td></tr>
-        <tr><td>Einwohner</td><td>15.911</td><td>15.931</td><td>+0,1 %</td></tr>
-        <tr><td>Hebesatz Grundsteuer A</td><td>326 %</td><td>326 %</td><td>±0 Pkt.</td></tr>
-        <tr><td>Hebesatz Grundsteuer B</td><td>420 %</td><td>383 %</td><td>&minus;37 Pkt.</td></tr>
-        <tr><td>Hebesatz Gewerbesteuer</td><td>445 %</td><td>445 %</td><td>±0 Pkt.</td></tr>
-      </tbody>
-    </table>
   </div>
   <div class="panel">
     <h3 class="section">Einordnung im Saarland</h3>
@@ -3925,21 +3715,6 @@ footer.note{font-size:.78rem;color:var(--muted);margin-top:18px;line-height:1.6}
     </div>
   </div>
   <div class="panel">
-    <h3 class="section">Entwicklung zum Vorjahr</h3>
-    <p class="hint">Vergleich 2024 und 2025. Gemeindesteuern brutto.</p>
-    <table class="cmpt">
-      <thead><tr><th>Kennzahl</th><th>2024</th><th>2025</th><th>Veränderung</th></tr></thead>
-      <tbody>
-        <tr><td>Gemeindesteuern</td><td>18,9 Mio. €</td><td>17,7 Mio. €</td><td class="down">&minus;6,0 %</td></tr>
-        <tr><td>Pro Einwohner</td><td>1.848 €</td><td>1.745 €</td><td>&minus;5,6 %</td></tr>
-        <tr><td>Einwohner</td><td>10.203</td><td>10.156</td><td>&minus;0,5 %</td></tr>
-        <tr><td>Hebesatz Grundsteuer A</td><td>260 %</td><td>260 %</td><td>±0 Pkt.</td></tr>
-        <tr><td>Hebesatz Grundsteuer B</td><td>600 %</td><td>600 %</td><td>±0 Pkt.</td></tr>
-        <tr><td>Hebesatz Gewerbesteuer</td><td>480 %</td><td>480 %</td><td>±0 Pkt.</td></tr>
-      </tbody>
-    </table>
-  </div>
-  <div class="panel">
     <h3 class="section">Einordnung im Saarland</h3>
     <p class="rank" style="font-size:.95rem"><strong>Kirkel</strong> liegt beim Steueraufkommen pro Kopf im Saarland mit 1.745 € auf dem <strong>7. Platz</strong> von 52 Kommunen, 22,5 % über dem Landesschnitt von 1.424 €.</p>
     <p class="hint">Gemeindesteuern pro Einwohner, alle 52 Kommunen. Kommune anklicken, um sie anzuzeigen.</p>
@@ -3980,21 +3755,6 @@ footer.note{font-size:.78rem;color:var(--muted);margin-top:18px;line-height:1.6}
       <p class="hint" style="margin-top:12px">Der Hebesatz legt fest, wie viel Steuer auf die Grundlage entfällt. Die Kommune setzt ihn selbst fest. Hebesatz anklicken, um das Rechenbeispiel zu sehen.</p>
       <div class="example ex-grA"><p class="ex-title">Grundsteuer A</p><p>Eigentümer land- und forstwirtschaftlicher Flächen zahlen diese Steuer. Die Kommune legt den Hebesatz fest, mit dem der Steuermessbetrag multipliziert wird.</p></div><div class="example ex-grB"><p class="ex-title">Grundsteuer B</p><p>Eigentümer bebauter und unbebauter Grundstücke zahlen diese Steuer, Mieter meist über die Nebenkosten. Die Kommune legt den Hebesatz fest, mit dem der Steuermessbetrag multipliziert wird.</p></div><div class="example ex-gewSt"><p class="ex-title">Gewerbesteuer</p><p>Unternehmen mit Gewerbebetrieb zahlen sie, abhängig von ihrem Gewinn. Die Kommune legt den Hebesatz fest; die Angabe auf dieser Seite ist vor der Gewerbesteuerumlage.</p></div>
     </div>
-  </div>
-  <div class="panel">
-    <h3 class="section">Entwicklung zum Vorjahr</h3>
-    <p class="hint">Vergleich 2024 und 2025. Gemeindesteuern brutto.</p>
-    <table class="cmpt">
-      <thead><tr><th>Kennzahl</th><th>2024</th><th>2025</th><th>Veränderung</th></tr></thead>
-      <tbody>
-        <tr><td>Gemeindesteuern</td><td>13,9 Mio. €</td><td>14,2 Mio. €</td><td class="up">+2,6 %</td></tr>
-        <tr><td>Pro Einwohner</td><td>1.270 €</td><td>1.322 €</td><td>+4,1 %</td></tr>
-        <tr><td>Einwohner</td><td>10.912</td><td>10.759</td><td>&minus;1,4 %</td></tr>
-        <tr><td>Hebesatz Grundsteuer A</td><td>260 %</td><td>260 %</td><td>±0 Pkt.</td></tr>
-        <tr><td>Hebesatz Grundsteuer B</td><td>400 %</td><td>365 %</td><td>&minus;35 Pkt.</td></tr>
-        <tr><td>Hebesatz Gewerbesteuer</td><td>430 %</td><td>430 %</td><td>±0 Pkt.</td></tr>
-      </tbody>
-    </table>
   </div>
   <div class="panel">
     <h3 class="section">Einordnung im Saarland</h3>
@@ -4039,21 +3799,6 @@ footer.note{font-size:.78rem;color:var(--muted);margin-top:18px;line-height:1.6}
     </div>
   </div>
   <div class="panel">
-    <h3 class="section">Entwicklung zum Vorjahr</h3>
-    <p class="hint">Vergleich 2024 und 2025. Gemeindesteuern brutto.</p>
-    <table class="cmpt">
-      <thead><tr><th>Kennzahl</th><th>2024</th><th>2025</th><th>Veränderung</th></tr></thead>
-      <tbody>
-        <tr><td>Gemeindesteuern</td><td>19,2 Mio. €</td><td>19,1 Mio. €</td><td class="down">&minus;0,7 %</td></tr>
-        <tr><td>Pro Einwohner</td><td>982 €</td><td>991 €</td><td>+0,9 %</td></tr>
-        <tr><td>Einwohner</td><td>19.577</td><td>19.269</td><td>&minus;1,6 %</td></tr>
-        <tr><td>Hebesatz Grundsteuer A</td><td>300 %</td><td>300 %</td><td>±0 Pkt.</td></tr>
-        <tr><td>Hebesatz Grundsteuer B</td><td>560 %</td><td>510 %</td><td>&minus;50 Pkt.</td></tr>
-        <tr><td>Hebesatz Gewerbesteuer</td><td>430 %</td><td>430 %</td><td>±0 Pkt.</td></tr>
-      </tbody>
-    </table>
-  </div>
-  <div class="panel">
     <h3 class="section">Einordnung im Saarland</h3>
     <p class="rank" style="font-size:.95rem"><strong>Lebach</strong> liegt beim Steueraufkommen pro Kopf im Saarland mit 991 € auf dem <strong>31. Platz</strong> von 52 Kommunen, 30,4 % unter dem Landesschnitt von 1.424 €.</p>
     <p class="hint">Gemeindesteuern pro Einwohner, alle 52 Kommunen. Kommune anklicken, um sie anzuzeigen.</p>
@@ -4094,21 +3839,6 @@ footer.note{font-size:.78rem;color:var(--muted);margin-top:18px;line-height:1.6}
       <p class="hint" style="margin-top:12px">Der Hebesatz legt fest, wie viel Steuer auf die Grundlage entfällt. Die Kommune setzt ihn selbst fest. Hebesatz anklicken, um das Rechenbeispiel zu sehen.</p>
       <div class="example ex-grA"><p class="ex-title">Grundsteuer A</p><p>Eigentümer land- und forstwirtschaftlicher Flächen zahlen diese Steuer. Die Kommune legt den Hebesatz fest, mit dem der Steuermessbetrag multipliziert wird.</p></div><div class="example ex-grB"><p class="ex-title">Grundsteuer B</p><p>Eigentümer bebauter und unbebauter Grundstücke zahlen diese Steuer, Mieter meist über die Nebenkosten. Die Kommune legt den Hebesatz fest, mit dem der Steuermessbetrag multipliziert wird.</p></div><div class="example ex-gewSt"><p class="ex-title">Gewerbesteuer</p><p>Unternehmen mit Gewerbebetrieb zahlen sie, abhängig von ihrem Gewinn. Die Kommune legt den Hebesatz fest; die Angabe auf dieser Seite ist vor der Gewerbesteuerumlage.</p></div>
     </div>
-  </div>
-  <div class="panel">
-    <h3 class="section">Entwicklung zum Vorjahr</h3>
-    <p class="hint">Vergleich 2024 und 2025. Gemeindesteuern brutto.</p>
-    <table class="cmpt">
-      <thead><tr><th>Kennzahl</th><th>2024</th><th>2025</th><th>Veränderung</th></tr></thead>
-      <tbody>
-        <tr><td>Gemeindesteuern</td><td>22,9 Mio. €</td><td>24,1 Mio. €</td><td class="up">+5,4 %</td></tr>
-        <tr><td>Pro Einwohner</td><td>1.383 €</td><td>1.463 €</td><td>+5,8 %</td></tr>
-        <tr><td>Einwohner</td><td>16.556</td><td>16.501</td><td>&minus;0,3 %</td></tr>
-        <tr><td>Hebesatz Grundsteuer A</td><td>305 %</td><td>305 %</td><td>±0 Pkt.</td></tr>
-        <tr><td>Hebesatz Grundsteuer B</td><td>430 %</td><td>350 %</td><td>&minus;80 Pkt.</td></tr>
-        <tr><td>Hebesatz Gewerbesteuer</td><td>445 %</td><td>445 %</td><td>±0 Pkt.</td></tr>
-      </tbody>
-    </table>
   </div>
   <div class="panel">
     <h3 class="section">Einordnung im Saarland</h3>
@@ -4153,21 +3883,6 @@ footer.note{font-size:.78rem;color:var(--muted);margin-top:18px;line-height:1.6}
     </div>
   </div>
   <div class="panel">
-    <h3 class="section">Entwicklung zum Vorjahr</h3>
-    <p class="hint">Vergleich 2024 und 2025. Gemeindesteuern brutto.</p>
-    <table class="cmpt">
-      <thead><tr><th>Kennzahl</th><th>2024</th><th>2025</th><th>Veränderung</th></tr></thead>
-      <tbody>
-        <tr><td>Gemeindesteuern</td><td>9,9 Mio. €</td><td>11,5 Mio. €</td><td class="up">+16,5 %</td></tr>
-        <tr><td>Pro Einwohner</td><td>909 €</td><td>1.067 €</td><td>+17,4 %</td></tr>
-        <tr><td>Einwohner</td><td>10.891</td><td>10.804</td><td>&minus;0,8 %</td></tr>
-        <tr><td>Hebesatz Grundsteuer A</td><td>460 %</td><td>460 %</td><td>±0 Pkt.</td></tr>
-        <tr><td>Hebesatz Grundsteuer B</td><td>550 %</td><td>480 %</td><td>&minus;70 Pkt.</td></tr>
-        <tr><td>Hebesatz Gewerbesteuer</td><td>430 %</td><td>370 %</td><td>&minus;60 Pkt.</td></tr>
-      </tbody>
-    </table>
-  </div>
-  <div class="panel">
     <h3 class="section">Einordnung im Saarland</h3>
     <p class="rank" style="font-size:.95rem"><strong>Mandelbachtal</strong> liegt beim Steueraufkommen pro Kopf im Saarland mit 1.067 € auf dem <strong>26. Platz</strong> von 52 Kommunen, 25,1 % unter dem Landesschnitt von 1.424 €.</p>
     <p class="hint">Gemeindesteuern pro Einwohner, alle 52 Kommunen. Kommune anklicken, um sie anzuzeigen.</p>
@@ -4208,21 +3923,6 @@ footer.note{font-size:.78rem;color:var(--muted);margin-top:18px;line-height:1.6}
       <p class="hint" style="margin-top:12px">Der Hebesatz legt fest, wie viel Steuer auf die Grundlage entfällt. Die Kommune setzt ihn selbst fest. Hebesatz anklicken, um das Rechenbeispiel zu sehen.</p>
       <div class="example ex-grA"><p class="ex-title">Grundsteuer A</p><p>Eigentümer land- und forstwirtschaftlicher Flächen zahlen diese Steuer. Die Kommune legt den Hebesatz fest, mit dem der Steuermessbetrag multipliziert wird.</p></div><div class="example ex-grB"><p class="ex-title">Grundsteuer B</p><p>Eigentümer bebauter und unbebauter Grundstücke zahlen diese Steuer, Mieter meist über die Nebenkosten. Die Kommune legt den Hebesatz fest, mit dem der Steuermessbetrag multipliziert wird.</p></div><div class="example ex-gewSt"><p class="ex-title">Gewerbesteuer</p><p>Unternehmen mit Gewerbebetrieb zahlen sie, abhängig von ihrem Gewinn. Die Kommune legt den Hebesatz fest; die Angabe auf dieser Seite ist vor der Gewerbesteuerumlage.</p></div>
     </div>
-  </div>
-  <div class="panel">
-    <h3 class="section">Entwicklung zum Vorjahr</h3>
-    <p class="hint">Vergleich 2024 und 2025. Gemeindesteuern brutto.</p>
-    <table class="cmpt">
-      <thead><tr><th>Kennzahl</th><th>2024</th><th>2025</th><th>Veränderung</th></tr></thead>
-      <tbody>
-        <tr><td>Gemeindesteuern</td><td>7,9 Mio. €</td><td>8,4 Mio. €</td><td class="up">+6,7 %</td></tr>
-        <tr><td>Pro Einwohner</td><td>763 €</td><td>819 €</td><td>+7,3 %</td></tr>
-        <tr><td>Einwohner</td><td>10.335</td><td>10.279</td><td>&minus;0,5 %</td></tr>
-        <tr><td>Hebesatz Grundsteuer A</td><td>285 %</td><td>285 %</td><td>±0 Pkt.</td></tr>
-        <tr><td>Hebesatz Grundsteuer B</td><td>355 %</td><td>300 %</td><td>&minus;55 Pkt.</td></tr>
-        <tr><td>Hebesatz Gewerbesteuer</td><td>400 %</td><td>400 %</td><td>±0 Pkt.</td></tr>
-      </tbody>
-    </table>
   </div>
   <div class="panel">
     <h3 class="section">Einordnung im Saarland</h3>
@@ -4267,21 +3967,6 @@ footer.note{font-size:.78rem;color:var(--muted);margin-top:18px;line-height:1.6}
     </div>
   </div>
   <div class="panel">
-    <h3 class="section">Entwicklung zum Vorjahr</h3>
-    <p class="hint">Vergleich 2024 und 2025. Gemeindesteuern brutto.</p>
-    <table class="cmpt">
-      <thead><tr><th>Kennzahl</th><th>2024</th><th>2025</th><th>Veränderung</th></tr></thead>
-      <tbody>
-        <tr><td>Gemeindesteuern</td><td>9,4 Mio. €</td><td>8,4 Mio. €</td><td class="down">&minus;10,4 %</td></tr>
-        <tr><td>Pro Einwohner</td><td>929 €</td><td>839 €</td><td>&minus;9,7 %</td></tr>
-        <tr><td>Einwohner</td><td>10.143</td><td>10.060</td><td>&minus;0,8 %</td></tr>
-        <tr><td>Hebesatz Grundsteuer A</td><td>280 %</td><td>280 %</td><td>±0 Pkt.</td></tr>
-        <tr><td>Hebesatz Grundsteuer B</td><td>490 %</td><td>415 %</td><td>&minus;75 Pkt.</td></tr>
-        <tr><td>Hebesatz Gewerbesteuer</td><td>450 %</td><td>450 %</td><td>±0 Pkt.</td></tr>
-      </tbody>
-    </table>
-  </div>
-  <div class="panel">
     <h3 class="section">Einordnung im Saarland</h3>
     <p class="rank" style="font-size:.95rem"><strong>Merchweiler</strong> liegt beim Steueraufkommen pro Kopf im Saarland mit 839 € auf dem <strong>44. Platz</strong> von 52 Kommunen, 41,1 % unter dem Landesschnitt von 1.424 €.</p>
     <p class="hint">Gemeindesteuern pro Einwohner, alle 52 Kommunen. Kommune anklicken, um sie anzuzeigen.</p>
@@ -4322,21 +4007,6 @@ footer.note{font-size:.78rem;color:var(--muted);margin-top:18px;line-height:1.6}
       <p class="hint" style="margin-top:12px">Der Hebesatz legt fest, wie viel Steuer auf die Grundlage entfällt. Die Kommune setzt ihn selbst fest. Hebesatz anklicken, um das Rechenbeispiel zu sehen.</p>
       <div class="example ex-grA"><p class="ex-title">Grundsteuer A</p><p>Eigentümer land- und forstwirtschaftlicher Flächen zahlen diese Steuer. Die Kommune legt den Hebesatz fest, mit dem der Steuermessbetrag multipliziert wird.</p></div><div class="example ex-grB"><p class="ex-title">Grundsteuer B</p><p>Eigentümer bebauter und unbebauter Grundstücke zahlen diese Steuer, Mieter meist über die Nebenkosten. Die Kommune legt den Hebesatz fest, mit dem der Steuermessbetrag multipliziert wird.</p></div><div class="example ex-gewSt"><p class="ex-title">Gewerbesteuer</p><p>Unternehmen mit Gewerbebetrieb zahlen sie, abhängig von ihrem Gewinn. Die Kommune legt den Hebesatz fest; die Angabe auf dieser Seite ist vor der Gewerbesteuerumlage.</p></div>
     </div>
-  </div>
-  <div class="panel">
-    <h3 class="section">Entwicklung zum Vorjahr</h3>
-    <p class="hint">Vergleich 2024 und 2025. Gemeindesteuern brutto.</p>
-    <table class="cmpt">
-      <thead><tr><th>Kennzahl</th><th>2024</th><th>2025</th><th>Veränderung</th></tr></thead>
-      <tbody>
-        <tr><td>Gemeindesteuern</td><td>39,5 Mio. €</td><td>45,6 Mio. €</td><td class="up">+15,5 %</td></tr>
-        <tr><td>Pro Einwohner</td><td>1.246 €</td><td>1.445 €</td><td>+16,0 %</td></tr>
-        <tr><td>Einwohner</td><td>31.671</td><td>31.556</td><td>&minus;0,4 %</td></tr>
-        <tr><td>Hebesatz Grundsteuer A</td><td>309 %</td><td>309 %</td><td>±0 Pkt.</td></tr>
-        <tr><td>Hebesatz Grundsteuer B</td><td>470 %</td><td>440 %</td><td>&minus;30 Pkt.</td></tr>
-        <tr><td>Hebesatz Gewerbesteuer</td><td>425 %</td><td>440 %</td><td>+15 Pkt.</td></tr>
-      </tbody>
-    </table>
   </div>
   <div class="panel">
     <h3 class="section">Einordnung im Saarland</h3>
@@ -4381,21 +4051,6 @@ footer.note{font-size:.78rem;color:var(--muted);margin-top:18px;line-height:1.6}
     </div>
   </div>
   <div class="panel">
-    <h3 class="section">Entwicklung zum Vorjahr</h3>
-    <p class="hint">Vergleich 2024 und 2025. Gemeindesteuern brutto.</p>
-    <table class="cmpt">
-      <thead><tr><th>Kennzahl</th><th>2024</th><th>2025</th><th>Veränderung</th></tr></thead>
-      <tbody>
-        <tr><td>Gemeindesteuern</td><td>9,2 Mio. €</td><td>9,8 Mio. €</td><td class="up">+6,5 %</td></tr>
-        <tr><td>Pro Einwohner</td><td>720 €</td><td>780 €</td><td>+8,3 %</td></tr>
-        <tr><td>Einwohner</td><td>12.733</td><td>12.531</td><td>&minus;1,6 %</td></tr>
-        <tr><td>Hebesatz Grundsteuer A</td><td>300 %</td><td>300 %</td><td>±0 Pkt.</td></tr>
-        <tr><td>Hebesatz Grundsteuer B</td><td>430 %</td><td>360 %</td><td>&minus;70 Pkt.</td></tr>
-        <tr><td>Hebesatz Gewerbesteuer</td><td>449 %</td><td>449 %</td><td>±0 Pkt.</td></tr>
-      </tbody>
-    </table>
-  </div>
-  <div class="panel">
     <h3 class="section">Einordnung im Saarland</h3>
     <p class="rank" style="font-size:.95rem"><strong>Mettlach</strong> liegt beim Steueraufkommen pro Kopf im Saarland mit 780 € auf dem <strong>49. Platz</strong> von 52 Kommunen, 45,2 % unter dem Landesschnitt von 1.424 €.</p>
     <p class="hint">Gemeindesteuern pro Einwohner, alle 52 Kommunen. Kommune anklicken, um sie anzuzeigen.</p>
@@ -4436,21 +4091,6 @@ footer.note{font-size:.78rem;color:var(--muted);margin-top:18px;line-height:1.6}
       <p class="hint" style="margin-top:12px">Der Hebesatz legt fest, wie viel Steuer auf die Grundlage entfällt. Die Kommune setzt ihn selbst fest. Hebesatz anklicken, um das Rechenbeispiel zu sehen.</p>
       <div class="example ex-grA"><p class="ex-title">Grundsteuer A</p><p>Eigentümer land- und forstwirtschaftlicher Flächen zahlen diese Steuer. Die Kommune legt den Hebesatz fest, mit dem der Steuermessbetrag multipliziert wird.</p></div><div class="example ex-grB"><p class="ex-title">Grundsteuer B</p><p>Eigentümer bebauter und unbebauter Grundstücke zahlen diese Steuer, Mieter meist über die Nebenkosten. Die Kommune legt den Hebesatz fest, mit dem der Steuermessbetrag multipliziert wird.</p></div><div class="example ex-gewSt"><p class="ex-title">Gewerbesteuer</p><p>Unternehmen mit Gewerbebetrieb zahlen sie, abhängig von ihrem Gewinn. Die Kommune legt den Hebesatz fest; die Angabe auf dieser Seite ist vor der Gewerbesteuerumlage.</p></div>
     </div>
-  </div>
-  <div class="panel">
-    <h3 class="section">Entwicklung zum Vorjahr</h3>
-    <p class="hint">Vergleich 2024 und 2025. Gemeindesteuern brutto.</p>
-    <table class="cmpt">
-      <thead><tr><th>Kennzahl</th><th>2024</th><th>2025</th><th>Veränderung</th></tr></thead>
-      <tbody>
-        <tr><td>Gemeindesteuern</td><td>8,1 Mio. €</td><td>8,2 Mio. €</td><td class="up">+1,2 %</td></tr>
-        <tr><td>Pro Einwohner</td><td>879 €</td><td>899 €</td><td>+2,3 %</td></tr>
-        <tr><td>Einwohner</td><td>9.259</td><td>9.157</td><td>&minus;1,1 %</td></tr>
-        <tr><td>Hebesatz Grundsteuer A</td><td>270 %</td><td>270 %</td><td>±0 Pkt.</td></tr>
-        <tr><td>Hebesatz Grundsteuer B</td><td>490 %</td><td>440 %</td><td>&minus;50 Pkt.</td></tr>
-        <tr><td>Hebesatz Gewerbesteuer</td><td>420 %</td><td>420 %</td><td>±0 Pkt.</td></tr>
-      </tbody>
-    </table>
   </div>
   <div class="panel">
     <h3 class="section">Einordnung im Saarland</h3>
@@ -4495,21 +4135,6 @@ footer.note{font-size:.78rem;color:var(--muted);margin-top:18px;line-height:1.6}
     </div>
   </div>
   <div class="panel">
-    <h3 class="section">Entwicklung zum Vorjahr</h3>
-    <p class="hint">Vergleich 2024 und 2025. Gemeindesteuern brutto.</p>
-    <table class="cmpt">
-      <thead><tr><th>Kennzahl</th><th>2024</th><th>2025</th><th>Veränderung</th></tr></thead>
-      <tbody>
-        <tr><td>Gemeindesteuern</td><td>5,0 Mio. €</td><td>5,0 Mio. €</td><td class="up">+1,5 %</td></tr>
-        <tr><td>Pro Einwohner</td><td>696 €</td><td>710 €</td><td>+2,0 %</td></tr>
-        <tr><td>Einwohner</td><td>7.120</td><td>7.083</td><td>&minus;0,5 %</td></tr>
-        <tr><td>Hebesatz Grundsteuer A</td><td>300 %</td><td>300 %</td><td>±0 Pkt.</td></tr>
-        <tr><td>Hebesatz Grundsteuer B</td><td>440 %</td><td>350 %</td><td>&minus;90 Pkt.</td></tr>
-        <tr><td>Hebesatz Gewerbesteuer</td><td>420 %</td><td>425 %</td><td>+5 Pkt.</td></tr>
-      </tbody>
-    </table>
-  </div>
-  <div class="panel">
     <h3 class="section">Einordnung im Saarland</h3>
     <p class="rank" style="font-size:.95rem"><strong>Namborn</strong> liegt beim Steueraufkommen pro Kopf im Saarland mit 710 € auf dem <strong>52. Platz</strong> von 52 Kommunen, 50,2 % unter dem Landesschnitt von 1.424 €.</p>
     <p class="hint">Gemeindesteuern pro Einwohner, alle 52 Kommunen. Kommune anklicken, um sie anzuzeigen.</p>
@@ -4550,21 +4175,6 @@ footer.note{font-size:.78rem;color:var(--muted);margin-top:18px;line-height:1.6}
       <p class="hint" style="margin-top:12px">Der Hebesatz legt fest, wie viel Steuer auf die Grundlage entfällt. Die Kommune setzt ihn selbst fest. Hebesatz anklicken, um das Rechenbeispiel zu sehen.</p>
       <div class="example ex-grA"><p class="ex-title">Grundsteuer A</p><p>Eigentümer land- und forstwirtschaftlicher Flächen zahlen diese Steuer. Die Kommune legt den Hebesatz fest, mit dem der Steuermessbetrag multipliziert wird.</p></div><div class="example ex-grB"><p class="ex-title">Grundsteuer B</p><p>Eigentümer bebauter und unbebauter Grundstücke zahlen diese Steuer, Mieter meist über die Nebenkosten. Die Kommune legt den Hebesatz fest, mit dem der Steuermessbetrag multipliziert wird.</p></div><div class="example ex-gewSt"><p class="ex-title">Gewerbesteuer</p><p>Unternehmen mit Gewerbebetrieb zahlen sie, abhängig von ihrem Gewinn. Die Kommune legt den Hebesatz fest; die Angabe auf dieser Seite ist vor der Gewerbesteuerumlage.</p></div>
     </div>
-  </div>
-  <div class="panel">
-    <h3 class="section">Entwicklung zum Vorjahr</h3>
-    <p class="hint">Vergleich 2024 und 2025. Gemeindesteuern brutto.</p>
-    <table class="cmpt">
-      <thead><tr><th>Kennzahl</th><th>2024</th><th>2025</th><th>Veränderung</th></tr></thead>
-      <tbody>
-        <tr><td>Gemeindesteuern</td><td>56,7 Mio. €</td><td>58,2 Mio. €</td><td class="up">+2,7 %</td></tr>
-        <tr><td>Pro Einwohner</td><td>1.194 €</td><td>1.235 €</td><td>+3,4 %</td></tr>
-        <tr><td>Einwohner</td><td>47.478</td><td>47.176</td><td>&minus;0,6 %</td></tr>
-        <tr><td>Hebesatz Grundsteuer A</td><td>250 %</td><td>270 %</td><td>+20 Pkt.</td></tr>
-        <tr><td>Hebesatz Grundsteuer B</td><td>450 %</td><td>485 %</td><td>+35 Pkt.</td></tr>
-        <tr><td>Hebesatz Gewerbesteuer</td><td>460 %</td><td>460 %</td><td>±0 Pkt.</td></tr>
-      </tbody>
-    </table>
   </div>
   <div class="panel">
     <h3 class="section">Einordnung im Saarland</h3>
@@ -4609,21 +4219,6 @@ footer.note{font-size:.78rem;color:var(--muted);margin-top:18px;line-height:1.6}
     </div>
   </div>
   <div class="panel">
-    <h3 class="section">Entwicklung zum Vorjahr</h3>
-    <p class="hint">Vergleich 2024 und 2025. Gemeindesteuern brutto.</p>
-    <table class="cmpt">
-      <thead><tr><th>Kennzahl</th><th>2024</th><th>2025</th><th>Veränderung</th></tr></thead>
-      <tbody>
-        <tr><td>Gemeindesteuern</td><td>9,6 Mio. €</td><td>10,3 Mio. €</td><td class="up">+7,8 %</td></tr>
-        <tr><td>Pro Einwohner</td><td>954 €</td><td>1.041 €</td><td>+9,1 %</td></tr>
-        <tr><td>Einwohner</td><td>10.040</td><td>9.930</td><td>&minus;1,1 %</td></tr>
-        <tr><td>Hebesatz Grundsteuer A</td><td>275 %</td><td>275 %</td><td>±0 Pkt.</td></tr>
-        <tr><td>Hebesatz Grundsteuer B</td><td>360 %</td><td>300 %</td><td>&minus;60 Pkt.</td></tr>
-        <tr><td>Hebesatz Gewerbesteuer</td><td>415 %</td><td>415 %</td><td>±0 Pkt.</td></tr>
-      </tbody>
-    </table>
-  </div>
-  <div class="panel">
     <h3 class="section">Einordnung im Saarland</h3>
     <p class="rank" style="font-size:.95rem"><strong>Nohfelden</strong> liegt beim Steueraufkommen pro Kopf im Saarland mit 1.041 € auf dem <strong>27. Platz</strong> von 52 Kommunen, 26,9 % unter dem Landesschnitt von 1.424 €.</p>
     <p class="hint">Gemeindesteuern pro Einwohner, alle 52 Kommunen. Kommune anklicken, um sie anzuzeigen.</p>
@@ -4664,21 +4259,6 @@ footer.note{font-size:.78rem;color:var(--muted);margin-top:18px;line-height:1.6}
       <p class="hint" style="margin-top:12px">Der Hebesatz legt fest, wie viel Steuer auf die Grundlage entfällt. Die Kommune setzt ihn selbst fest. Hebesatz anklicken, um das Rechenbeispiel zu sehen.</p>
       <div class="example ex-grA"><p class="ex-title">Grundsteuer A</p><p>Eigentümer land- und forstwirtschaftlicher Flächen zahlen diese Steuer. Die Kommune legt den Hebesatz fest, mit dem der Steuermessbetrag multipliziert wird.</p></div><div class="example ex-grB"><p class="ex-title">Grundsteuer B</p><p>Eigentümer bebauter und unbebauter Grundstücke zahlen diese Steuer, Mieter meist über die Nebenkosten. Die Kommune legt den Hebesatz fest, mit dem der Steuermessbetrag multipliziert wird.</p></div><div class="example ex-gewSt"><p class="ex-title">Gewerbesteuer</p><p>Unternehmen mit Gewerbebetrieb zahlen sie, abhängig von ihrem Gewinn. Die Kommune legt den Hebesatz fest; die Angabe auf dieser Seite ist vor der Gewerbesteuerumlage.</p></div>
     </div>
-  </div>
-  <div class="panel">
-    <h3 class="section">Entwicklung zum Vorjahr</h3>
-    <p class="hint">Vergleich 2024 und 2025. Gemeindesteuern brutto.</p>
-    <table class="cmpt">
-      <thead><tr><th>Kennzahl</th><th>2024</th><th>2025</th><th>Veränderung</th></tr></thead>
-      <tbody>
-        <tr><td>Gemeindesteuern</td><td>20,4 Mio. €</td><td>29,6 Mio. €</td><td class="up">+45,2 %</td></tr>
-        <tr><td>Pro Einwohner</td><td>2.398 €</td><td>3.534 €</td><td>+47,4 %</td></tr>
-        <tr><td>Einwohner</td><td>8.511</td><td>8.386</td><td>&minus;1,5 %</td></tr>
-        <tr><td>Hebesatz Grundsteuer A</td><td>270 %</td><td>270 %</td><td>±0 Pkt.</td></tr>
-        <tr><td>Hebesatz Grundsteuer B</td><td>420 %</td><td>395 %</td><td>&minus;25 Pkt.</td></tr>
-        <tr><td>Hebesatz Gewerbesteuer</td><td>410 %</td><td>410 %</td><td>±0 Pkt.</td></tr>
-      </tbody>
-    </table>
   </div>
   <div class="panel">
     <h3 class="section">Einordnung im Saarland</h3>
@@ -4723,21 +4303,6 @@ footer.note{font-size:.78rem;color:var(--muted);margin-top:18px;line-height:1.6}
     </div>
   </div>
   <div class="panel">
-    <h3 class="section">Entwicklung zum Vorjahr</h3>
-    <p class="hint">Vergleich 2024 und 2025. Gemeindesteuern brutto.</p>
-    <table class="cmpt">
-      <thead><tr><th>Kennzahl</th><th>2024</th><th>2025</th><th>Veränderung</th></tr></thead>
-      <tbody>
-        <tr><td>Gemeindesteuern</td><td>5,0 Mio. €</td><td>5,8 Mio. €</td><td class="up">+15,1 %</td></tr>
-        <tr><td>Pro Einwohner</td><td>828 €</td><td>960 €</td><td>+15,9 %</td></tr>
-        <tr><td>Einwohner</td><td>6.079</td><td>6.040</td><td>&minus;0,6 %</td></tr>
-        <tr><td>Hebesatz Grundsteuer A</td><td>300 %</td><td>300 %</td><td>±0 Pkt.</td></tr>
-        <tr><td>Hebesatz Grundsteuer B</td><td>400 %</td><td>360 %</td><td>&minus;40 Pkt.</td></tr>
-        <tr><td>Hebesatz Gewerbesteuer</td><td>415 %</td><td>415 %</td><td>±0 Pkt.</td></tr>
-      </tbody>
-    </table>
-  </div>
-  <div class="panel">
     <h3 class="section">Einordnung im Saarland</h3>
     <p class="rank" style="font-size:.95rem"><strong>Oberthal</strong> liegt beim Steueraufkommen pro Kopf im Saarland mit 960 € auf dem <strong>35. Platz</strong> von 52 Kommunen, 32,6 % unter dem Landesschnitt von 1.424 €.</p>
     <p class="hint">Gemeindesteuern pro Einwohner, alle 52 Kommunen. Kommune anklicken, um sie anzuzeigen.</p>
@@ -4778,21 +4343,6 @@ footer.note{font-size:.78rem;color:var(--muted);margin-top:18px;line-height:1.6}
       <p class="hint" style="margin-top:12px">Der Hebesatz legt fest, wie viel Steuer auf die Grundlage entfällt. Die Kommune setzt ihn selbst fest. Hebesatz anklicken, um das Rechenbeispiel zu sehen.</p>
       <div class="example ex-grA"><p class="ex-title">Grundsteuer A</p><p>Eigentümer land- und forstwirtschaftlicher Flächen zahlen diese Steuer. Die Kommune legt den Hebesatz fest, mit dem der Steuermessbetrag multipliziert wird.</p></div><div class="example ex-grB"><p class="ex-title">Grundsteuer B</p><p>Eigentümer bebauter und unbebauter Grundstücke zahlen diese Steuer, Mieter meist über die Nebenkosten. Die Kommune legt den Hebesatz fest, mit dem der Steuermessbetrag multipliziert wird.</p></div><div class="example ex-gewSt"><p class="ex-title">Gewerbesteuer</p><p>Unternehmen mit Gewerbebetrieb zahlen sie, abhängig von ihrem Gewinn. Die Kommune legt den Hebesatz fest; die Angabe auf dieser Seite ist vor der Gewerbesteuerumlage.</p></div>
     </div>
-  </div>
-  <div class="panel">
-    <h3 class="section">Entwicklung zum Vorjahr</h3>
-    <p class="hint">Vergleich 2024 und 2025. Gemeindesteuern brutto.</p>
-    <table class="cmpt">
-      <thead><tr><th>Kennzahl</th><th>2024</th><th>2025</th><th>Veränderung</th></tr></thead>
-      <tbody>
-        <tr><td>Gemeindesteuern</td><td>13,0 Mio. €</td><td>12,3 Mio. €</td><td class="down">&minus;5,4 %</td></tr>
-        <tr><td>Pro Einwohner</td><td>901 €</td><td>859 €</td><td>&minus;4,7 %</td></tr>
-        <tr><td>Einwohner</td><td>14.385</td><td>14.263</td><td>&minus;0,8 %</td></tr>
-        <tr><td>Hebesatz Grundsteuer A</td><td>340 %</td><td>340 %</td><td>±0 Pkt.</td></tr>
-        <tr><td>Hebesatz Grundsteuer B</td><td>495 %</td><td>445 %</td><td>&minus;50 Pkt.</td></tr>
-        <tr><td>Hebesatz Gewerbesteuer</td><td>455 %</td><td>455 %</td><td>±0 Pkt.</td></tr>
-      </tbody>
-    </table>
   </div>
   <div class="panel">
     <h3 class="section">Einordnung im Saarland</h3>
@@ -4837,21 +4387,6 @@ footer.note{font-size:.78rem;color:var(--muted);margin-top:18px;line-height:1.6}
     </div>
   </div>
   <div class="panel">
-    <h3 class="section">Entwicklung zum Vorjahr</h3>
-    <p class="hint">Vergleich 2024 und 2025. Gemeindesteuern brutto.</p>
-    <table class="cmpt">
-      <thead><tr><th>Kennzahl</th><th>2024</th><th>2025</th><th>Veränderung</th></tr></thead>
-      <tbody>
-        <tr><td>Gemeindesteuern</td><td>6,9 Mio. €</td><td>7,1 Mio. €</td><td class="up">+2,8 %</td></tr>
-        <tr><td>Pro Einwohner</td><td>729 €</td><td>758 €</td><td>+4,0 %</td></tr>
-        <tr><td>Einwohner</td><td>9.529</td><td>9.421</td><td>&minus;1,1 %</td></tr>
-        <tr><td>Hebesatz Grundsteuer A</td><td>350 %</td><td>350 %</td><td>±0 Pkt.</td></tr>
-        <tr><td>Hebesatz Grundsteuer B</td><td>450 %</td><td>295 %</td><td>&minus;155 Pkt.</td></tr>
-        <tr><td>Hebesatz Gewerbesteuer</td><td>450 %</td><td>450 %</td><td>±0 Pkt.</td></tr>
-      </tbody>
-    </table>
-  </div>
-  <div class="panel">
     <h3 class="section">Einordnung im Saarland</h3>
     <p class="rank" style="font-size:.95rem"><strong>Perl</strong> liegt beim Steueraufkommen pro Kopf im Saarland mit 758 € auf dem <strong>51. Platz</strong> von 52 Kommunen, 46,8 % unter dem Landesschnitt von 1.424 €.</p>
     <p class="hint">Gemeindesteuern pro Einwohner, alle 52 Kommunen. Kommune anklicken, um sie anzuzeigen.</p>
@@ -4892,21 +4427,6 @@ footer.note{font-size:.78rem;color:var(--muted);margin-top:18px;line-height:1.6}
       <p class="hint" style="margin-top:12px">Der Hebesatz legt fest, wie viel Steuer auf die Grundlage entfällt. Die Kommune setzt ihn selbst fest. Hebesatz anklicken, um das Rechenbeispiel zu sehen.</p>
       <div class="example ex-grA"><p class="ex-title">Grundsteuer A</p><p>Eigentümer land- und forstwirtschaftlicher Flächen zahlen diese Steuer. Die Kommune legt den Hebesatz fest, mit dem der Steuermessbetrag multipliziert wird.</p></div><div class="example ex-grB"><p class="ex-title">Grundsteuer B</p><p>Eigentümer bebauter und unbebauter Grundstücke zahlen diese Steuer, Mieter meist über die Nebenkosten. Die Kommune legt den Hebesatz fest, mit dem der Steuermessbetrag multipliziert wird.</p></div><div class="example ex-gewSt"><p class="ex-title">Gewerbesteuer</p><p>Unternehmen mit Gewerbebetrieb zahlen sie, abhängig von ihrem Gewinn. Die Kommune legt den Hebesatz fest; die Angabe auf dieser Seite ist vor der Gewerbesteuerumlage.</p></div>
     </div>
-  </div>
-  <div class="panel">
-    <h3 class="section">Entwicklung zum Vorjahr</h3>
-    <p class="hint">Vergleich 2024 und 2025. Gemeindesteuern brutto.</p>
-    <table class="cmpt">
-      <thead><tr><th>Kennzahl</th><th>2024</th><th>2025</th><th>Veränderung</th></tr></thead>
-      <tbody>
-        <tr><td>Gemeindesteuern</td><td>17,9 Mio. €</td><td>18,6 Mio. €</td><td class="up">+3,5 %</td></tr>
-        <tr><td>Pro Einwohner</td><td>974 €</td><td>1.011 €</td><td>+3,8 %</td></tr>
-        <tr><td>Einwohner</td><td>18.428</td><td>18.364</td><td>&minus;0,3 %</td></tr>
-        <tr><td>Hebesatz Grundsteuer A</td><td>250 %</td><td>250 %</td><td>±0 Pkt.</td></tr>
-        <tr><td>Hebesatz Grundsteuer B</td><td>360 %</td><td>400 %</td><td>+40 Pkt.</td></tr>
-        <tr><td>Hebesatz Gewerbesteuer</td><td>425 %</td><td>425 %</td><td>±0 Pkt.</td></tr>
-      </tbody>
-    </table>
   </div>
   <div class="panel">
     <h3 class="section">Einordnung im Saarland</h3>
@@ -4951,21 +4471,6 @@ footer.note{font-size:.78rem;color:var(--muted);margin-top:18px;line-height:1.6}
     </div>
   </div>
   <div class="panel">
-    <h3 class="section">Entwicklung zum Vorjahr</h3>
-    <p class="hint">Vergleich 2024 und 2025. Gemeindesteuern brutto.</p>
-    <table class="cmpt">
-      <thead><tr><th>Kennzahl</th><th>2024</th><th>2025</th><th>Veränderung</th></tr></thead>
-      <tbody>
-        <tr><td>Gemeindesteuern</td><td>11,0 Mio. €</td><td>12,6 Mio. €</td><td class="up">+14,1 %</td></tr>
-        <tr><td>Pro Einwohner</td><td>853 €</td><td>984 €</td><td>+15,4 %</td></tr>
-        <tr><td>Einwohner</td><td>12.922</td><td>12.789</td><td>&minus;1,0 %</td></tr>
-        <tr><td>Hebesatz Grundsteuer A</td><td>250 %</td><td>246 %</td><td>&minus;4 Pkt.</td></tr>
-        <tr><td>Hebesatz Grundsteuer B</td><td>400 %</td><td>385 %</td><td>&minus;15 Pkt.</td></tr>
-        <tr><td>Hebesatz Gewerbesteuer</td><td>430 %</td><td>430 %</td><td>±0 Pkt.</td></tr>
-      </tbody>
-    </table>
-  </div>
-  <div class="panel">
     <h3 class="section">Einordnung im Saarland</h3>
     <p class="rank" style="font-size:.95rem"><strong>Quierschied</strong> liegt beim Steueraufkommen pro Kopf im Saarland mit 984 € auf dem <strong>32. Platz</strong> von 52 Kommunen, 30,9 % unter dem Landesschnitt von 1.424 €.</p>
     <p class="hint">Gemeindesteuern pro Einwohner, alle 52 Kommunen. Kommune anklicken, um sie anzuzeigen.</p>
@@ -5006,21 +4511,6 @@ footer.note{font-size:.78rem;color:var(--muted);margin-top:18px;line-height:1.6}
       <p class="hint" style="margin-top:12px">Der Hebesatz legt fest, wie viel Steuer auf die Grundlage entfällt. Die Kommune setzt ihn selbst fest. Hebesatz anklicken, um das Rechenbeispiel zu sehen.</p>
       <div class="example ex-grA"><p class="ex-title">Grundsteuer A</p><p>Eigentümer land- und forstwirtschaftlicher Flächen zahlen diese Steuer. Die Kommune legt den Hebesatz fest, mit dem der Steuermessbetrag multipliziert wird.</p></div><div class="example ex-grB"><p class="ex-title">Grundsteuer B</p><p>Eigentümer bebauter und unbebauter Grundstücke zahlen diese Steuer, Mieter meist über die Nebenkosten. Die Kommune legt den Hebesatz fest, mit dem der Steuermessbetrag multipliziert wird.</p></div><div class="example ex-gewSt"><p class="ex-title">Gewerbesteuer</p><p>Unternehmen mit Gewerbebetrieb zahlen sie, abhängig von ihrem Gewinn. Die Kommune legt den Hebesatz fest; die Angabe auf dieser Seite ist vor der Gewerbesteuerumlage.</p></div>
     </div>
-  </div>
-  <div class="panel">
-    <h3 class="section">Entwicklung zum Vorjahr</h3>
-    <p class="hint">Vergleich 2024 und 2025. Gemeindesteuern brutto.</p>
-    <table class="cmpt">
-      <thead><tr><th>Kennzahl</th><th>2024</th><th>2025</th><th>Veränderung</th></tr></thead>
-      <tbody>
-        <tr><td>Gemeindesteuern</td><td>15,0 Mio. €</td><td>13,5 Mio. €</td><td class="down">&minus;10,3 %</td></tr>
-        <tr><td>Pro Einwohner</td><td>1.005 €</td><td>903 €</td><td>&minus;10,1 %</td></tr>
-        <tr><td>Einwohner</td><td>14.961</td><td>14.925</td><td>&minus;0,2 %</td></tr>
-        <tr><td>Hebesatz Grundsteuer A</td><td>300 %</td><td>300 %</td><td>±0 Pkt.</td></tr>
-        <tr><td>Hebesatz Grundsteuer B</td><td>460 %</td><td>380 %</td><td>&minus;80 Pkt.</td></tr>
-        <tr><td>Hebesatz Gewerbesteuer</td><td>435 %</td><td>435 %</td><td>±0 Pkt.</td></tr>
-      </tbody>
-    </table>
   </div>
   <div class="panel">
     <h3 class="section">Einordnung im Saarland</h3>
@@ -5065,21 +4555,6 @@ footer.note{font-size:.78rem;color:var(--muted);margin-top:18px;line-height:1.6}
     </div>
   </div>
   <div class="panel">
-    <h3 class="section">Entwicklung zum Vorjahr</h3>
-    <p class="hint">Vergleich 2024 und 2025. Gemeindesteuern brutto.</p>
-    <table class="cmpt">
-      <thead><tr><th>Kennzahl</th><th>2024</th><th>2025</th><th>Veränderung</th></tr></thead>
-      <tbody>
-        <tr><td>Gemeindesteuern</td><td>13,4 Mio. €</td><td>13,7 Mio. €</td><td class="up">+2,2 %</td></tr>
-        <tr><td>Pro Einwohner</td><td>935 €</td><td>961 €</td><td>+2,8 %</td></tr>
-        <tr><td>Einwohner</td><td>14.337</td><td>14.265</td><td>&minus;0,5 %</td></tr>
-        <tr><td>Hebesatz Grundsteuer A</td><td>300 %</td><td>300 %</td><td>±0 Pkt.</td></tr>
-        <tr><td>Hebesatz Grundsteuer B</td><td>384 %</td><td>370 %</td><td>&minus;14 Pkt.</td></tr>
-        <tr><td>Hebesatz Gewerbesteuer</td><td>400 %</td><td>400 %</td><td>±0 Pkt.</td></tr>
-      </tbody>
-    </table>
-  </div>
-  <div class="panel">
     <h3 class="section">Einordnung im Saarland</h3>
     <p class="rank" style="font-size:.95rem"><strong>Riegelsberg</strong> liegt beim Steueraufkommen pro Kopf im Saarland mit 961 € auf dem <strong>34. Platz</strong> von 52 Kommunen, 32,5 % unter dem Landesschnitt von 1.424 €.</p>
     <p class="hint">Gemeindesteuern pro Einwohner, alle 52 Kommunen. Kommune anklicken, um sie anzuzeigen.</p>
@@ -5120,21 +4595,6 @@ footer.note{font-size:.78rem;color:var(--muted);margin-top:18px;line-height:1.6}
       <p class="hint" style="margin-top:12px">Der Hebesatz legt fest, wie viel Steuer auf die Grundlage entfällt. Die Kommune setzt ihn selbst fest. Hebesatz anklicken, um das Rechenbeispiel zu sehen.</p>
       <div class="example ex-grA"><p class="ex-title">Grundsteuer A</p><p>Eigentümer land- und forstwirtschaftlicher Flächen zahlen diese Steuer. Die Kommune legt den Hebesatz fest, mit dem der Steuermessbetrag multipliziert wird.</p></div><div class="example ex-grB"><p class="ex-title">Grundsteuer B</p><p>Eigentümer bebauter und unbebauter Grundstücke zahlen diese Steuer, Mieter meist über die Nebenkosten. Die Kommune legt den Hebesatz fest, mit dem der Steuermessbetrag multipliziert wird.</p></div><div class="example ex-gewSt"><p class="ex-title">Gewerbesteuer</p><p>Unternehmen mit Gewerbebetrieb zahlen sie, abhängig von ihrem Gewinn. Die Kommune legt den Hebesatz fest; die Angabe auf dieser Seite ist vor der Gewerbesteuerumlage.</p></div>
     </div>
-  </div>
-  <div class="panel">
-    <h3 class="section">Entwicklung zum Vorjahr</h3>
-    <p class="hint">Vergleich 2024 und 2025. Gemeindesteuern brutto.</p>
-    <table class="cmpt">
-      <thead><tr><th>Kennzahl</th><th>2024</th><th>2025</th><th>Veränderung</th></tr></thead>
-      <tbody>
-        <tr><td>Gemeindesteuern</td><td>311,6 Mio. €</td><td>348,4 Mio. €</td><td class="up">+11,8 %</td></tr>
-        <tr><td>Pro Einwohner</td><td>1.707 €</td><td>1.908 €</td><td>+11,8 %</td></tr>
-        <tr><td>Einwohner</td><td>182.497</td><td>182.619</td><td>+0,1 %</td></tr>
-        <tr><td>Hebesatz Grundsteuer A</td><td>275 %</td><td>275 %</td><td>±0 Pkt.</td></tr>
-        <tr><td>Hebesatz Grundsteuer B</td><td>520 %</td><td>611 %</td><td>+91 Pkt.</td></tr>
-        <tr><td>Hebesatz Gewerbesteuer</td><td>490 %</td><td>490 %</td><td>±0 Pkt.</td></tr>
-      </tbody>
-    </table>
   </div>
   <div class="panel">
     <h3 class="section">Einordnung im Saarland</h3>
@@ -5179,21 +4639,6 @@ footer.note{font-size:.78rem;color:var(--muted);margin-top:18px;line-height:1.6}
     </div>
   </div>
   <div class="panel">
-    <h3 class="section">Entwicklung zum Vorjahr</h3>
-    <p class="hint">Vergleich 2024 und 2025. Gemeindesteuern brutto.</p>
-    <table class="cmpt">
-      <thead><tr><th>Kennzahl</th><th>2024</th><th>2025</th><th>Veränderung</th></tr></thead>
-      <tbody>
-        <tr><td>Gemeindesteuern</td><td>64,2 Mio. €</td><td>74,1 Mio. €</td><td class="up">+15,5 %</td></tr>
-        <tr><td>Pro Einwohner</td><td>1.707 €</td><td>1.970 €</td><td>+15,4 %</td></tr>
-        <tr><td>Einwohner</td><td>37.600</td><td>37.637</td><td>+0,1 %</td></tr>
-        <tr><td>Hebesatz Grundsteuer A</td><td>300 %</td><td>450 %</td><td>+150 Pkt.</td></tr>
-        <tr><td>Hebesatz Grundsteuer B</td><td>400 %</td><td>435 %</td><td>+35 Pkt.</td></tr>
-        <tr><td>Hebesatz Gewerbesteuer</td><td>430 %</td><td>430 %</td><td>±0 Pkt.</td></tr>
-      </tbody>
-    </table>
-  </div>
-  <div class="panel">
     <h3 class="section">Einordnung im Saarland</h3>
     <p class="rank" style="font-size:.95rem"><strong>Saarlouis</strong> liegt beim Steueraufkommen pro Kopf im Saarland mit 1.970 € auf dem <strong>4. Platz</strong> von 52 Kommunen, 38,3 % über dem Landesschnitt von 1.424 €.</p>
     <p class="hint">Gemeindesteuern pro Einwohner, alle 52 Kommunen. Kommune anklicken, um sie anzuzeigen.</p>
@@ -5234,21 +4679,6 @@ footer.note{font-size:.78rem;color:var(--muted);margin-top:18px;line-height:1.6}
       <p class="hint" style="margin-top:12px">Der Hebesatz legt fest, wie viel Steuer auf die Grundlage entfällt. Die Kommune setzt ihn selbst fest. Hebesatz anklicken, um das Rechenbeispiel zu sehen.</p>
       <div class="example ex-grA"><p class="ex-title">Grundsteuer A</p><p>Eigentümer land- und forstwirtschaftlicher Flächen zahlen diese Steuer. Die Kommune legt den Hebesatz fest, mit dem der Steuermessbetrag multipliziert wird.</p></div><div class="example ex-grB"><p class="ex-title">Grundsteuer B</p><p>Eigentümer bebauter und unbebauter Grundstücke zahlen diese Steuer, Mieter meist über die Nebenkosten. Die Kommune legt den Hebesatz fest, mit dem der Steuermessbetrag multipliziert wird.</p></div><div class="example ex-gewSt"><p class="ex-title">Gewerbesteuer</p><p>Unternehmen mit Gewerbebetrieb zahlen sie, abhängig von ihrem Gewinn. Die Kommune legt den Hebesatz fest; die Angabe auf dieser Seite ist vor der Gewerbesteuerumlage.</p></div>
     </div>
-  </div>
-  <div class="panel">
-    <h3 class="section">Entwicklung zum Vorjahr</h3>
-    <p class="hint">Vergleich 2024 und 2025. Gemeindesteuern brutto.</p>
-    <table class="cmpt">
-      <thead><tr><th>Kennzahl</th><th>2024</th><th>2025</th><th>Veränderung</th></tr></thead>
-      <tbody>
-        <tr><td>Gemeindesteuern</td><td>20,6 Mio. €</td><td>21,0 Mio. €</td><td class="up">+2,1 %</td></tr>
-        <tr><td>Pro Einwohner</td><td>1.507 €</td><td>1.548 €</td><td>+2,7 %</td></tr>
-        <tr><td>Einwohner</td><td>13.678</td><td>13.595</td><td>&minus;0,6 %</td></tr>
-        <tr><td>Hebesatz Grundsteuer A</td><td>325 %</td><td>325 %</td><td>±0 Pkt.</td></tr>
-        <tr><td>Hebesatz Grundsteuer B</td><td>375 %</td><td>360 %</td><td>&minus;15 Pkt.</td></tr>
-        <tr><td>Hebesatz Gewerbesteuer</td><td>430 %</td><td>430 %</td><td>±0 Pkt.</td></tr>
-      </tbody>
-    </table>
   </div>
   <div class="panel">
     <h3 class="section">Einordnung im Saarland</h3>
@@ -5293,21 +4723,6 @@ footer.note{font-size:.78rem;color:var(--muted);margin-top:18px;line-height:1.6}
     </div>
   </div>
   <div class="panel">
-    <h3 class="section">Entwicklung zum Vorjahr</h3>
-    <p class="hint">Vergleich 2024 und 2025. Gemeindesteuern brutto.</p>
-    <table class="cmpt">
-      <thead><tr><th>Kennzahl</th><th>2024</th><th>2025</th><th>Veränderung</th></tr></thead>
-      <tbody>
-        <tr><td>Gemeindesteuern</td><td>18,2 Mio. €</td><td>15,3 Mio. €</td><td class="down">&minus;16,0 %</td></tr>
-        <tr><td>Pro Einwohner</td><td>1.151 €</td><td>968 €</td><td>&minus;15,9 %</td></tr>
-        <tr><td>Einwohner</td><td>15.810</td><td>15.794</td><td>&minus;0,1 %</td></tr>
-        <tr><td>Hebesatz Grundsteuer A</td><td>280 %</td><td>280 %</td><td>±0 Pkt.</td></tr>
-        <tr><td>Hebesatz Grundsteuer B</td><td>500 %</td><td>440 %</td><td>&minus;60 Pkt.</td></tr>
-        <tr><td>Hebesatz Gewerbesteuer</td><td>500 %</td><td>460 %</td><td>&minus;40 Pkt.</td></tr>
-      </tbody>
-    </table>
-  </div>
-  <div class="panel">
     <h3 class="section">Einordnung im Saarland</h3>
     <p class="rank" style="font-size:.95rem"><strong>Schiffweiler</strong> liegt beim Steueraufkommen pro Kopf im Saarland mit 968 € auf dem <strong>33. Platz</strong> von 52 Kommunen, 32,0 % unter dem Landesschnitt von 1.424 €.</p>
     <p class="hint">Gemeindesteuern pro Einwohner, alle 52 Kommunen. Kommune anklicken, um sie anzuzeigen.</p>
@@ -5348,21 +4763,6 @@ footer.note{font-size:.78rem;color:var(--muted);margin-top:18px;line-height:1.6}
       <p class="hint" style="margin-top:12px">Der Hebesatz legt fest, wie viel Steuer auf die Grundlage entfällt. Die Kommune setzt ihn selbst fest. Hebesatz anklicken, um das Rechenbeispiel zu sehen.</p>
       <div class="example ex-grA"><p class="ex-title">Grundsteuer A</p><p>Eigentümer land- und forstwirtschaftlicher Flächen zahlen diese Steuer. Die Kommune legt den Hebesatz fest, mit dem der Steuermessbetrag multipliziert wird.</p></div><div class="example ex-grB"><p class="ex-title">Grundsteuer B</p><p>Eigentümer bebauter und unbebauter Grundstücke zahlen diese Steuer, Mieter meist über die Nebenkosten. Die Kommune legt den Hebesatz fest, mit dem der Steuermessbetrag multipliziert wird.</p></div><div class="example ex-gewSt"><p class="ex-title">Gewerbesteuer</p><p>Unternehmen mit Gewerbebetrieb zahlen sie, abhängig von ihrem Gewinn. Die Kommune legt den Hebesatz fest; die Angabe auf dieser Seite ist vor der Gewerbesteuerumlage.</p></div>
     </div>
-  </div>
-  <div class="panel">
-    <h3 class="section">Entwicklung zum Vorjahr</h3>
-    <p class="hint">Vergleich 2024 und 2025. Gemeindesteuern brutto.</p>
-    <table class="cmpt">
-      <thead><tr><th>Kennzahl</th><th>2024</th><th>2025</th><th>Veränderung</th></tr></thead>
-      <tbody>
-        <tr><td>Gemeindesteuern</td><td>20,6 Mio. €</td><td>25,3 Mio. €</td><td class="up">+23,2 %</td></tr>
-        <tr><td>Pro Einwohner</td><td>1.215 €</td><td>1.498 €</td><td>+23,3 %</td></tr>
-        <tr><td>Einwohner</td><td>16.937</td><td>16.914</td><td>&minus;0,1 %</td></tr>
-        <tr><td>Hebesatz Grundsteuer A</td><td>270 %</td><td>270 %</td><td>±0 Pkt.</td></tr>
-        <tr><td>Hebesatz Grundsteuer B</td><td>395 %</td><td>365 %</td><td>&minus;30 Pkt.</td></tr>
-        <tr><td>Hebesatz Gewerbesteuer</td><td>420 %</td><td>420 %</td><td>±0 Pkt.</td></tr>
-      </tbody>
-    </table>
   </div>
   <div class="panel">
     <h3 class="section">Einordnung im Saarland</h3>
@@ -5407,21 +4807,6 @@ footer.note{font-size:.78rem;color:var(--muted);margin-top:18px;line-height:1.6}
     </div>
   </div>
   <div class="panel">
-    <h3 class="section">Entwicklung zum Vorjahr</h3>
-    <p class="hint">Vergleich 2024 und 2025. Gemeindesteuern brutto.</p>
-    <table class="cmpt">
-      <thead><tr><th>Kennzahl</th><th>2024</th><th>2025</th><th>Veränderung</th></tr></thead>
-      <tbody>
-        <tr><td>Gemeindesteuern</td><td>14,9 Mio. €</td><td>14,5 Mio. €</td><td class="down">&minus;2,8 %</td></tr>
-        <tr><td>Pro Einwohner</td><td>825 €</td><td>805 €</td><td>&minus;2,4 %</td></tr>
-        <tr><td>Einwohner</td><td>18.100</td><td>18.030</td><td>&minus;0,4 %</td></tr>
-        <tr><td>Hebesatz Grundsteuer A</td><td>340 %</td><td>200 %</td><td>&minus;140 Pkt.</td></tr>
-        <tr><td>Hebesatz Grundsteuer B</td><td>440 %</td><td>400 %</td><td>&minus;40 Pkt.</td></tr>
-        <tr><td>Hebesatz Gewerbesteuer</td><td>440 %</td><td>440 %</td><td>±0 Pkt.</td></tr>
-      </tbody>
-    </table>
-  </div>
-  <div class="panel">
     <h3 class="section">Einordnung im Saarland</h3>
     <p class="rank" style="font-size:.95rem"><strong>Schwalbach</strong> liegt beim Steueraufkommen pro Kopf im Saarland mit 805 € auf dem <strong>48. Platz</strong> von 52 Kommunen, 43,5 % unter dem Landesschnitt von 1.424 €.</p>
     <p class="hint">Gemeindesteuern pro Einwohner, alle 52 Kommunen. Kommune anklicken, um sie anzuzeigen.</p>
@@ -5462,21 +4847,6 @@ footer.note{font-size:.78rem;color:var(--muted);margin-top:18px;line-height:1.6}
       <p class="hint" style="margin-top:12px">Der Hebesatz legt fest, wie viel Steuer auf die Grundlage entfällt. Die Kommune setzt ihn selbst fest. Hebesatz anklicken, um das Rechenbeispiel zu sehen.</p>
       <div class="example ex-grA"><p class="ex-title">Grundsteuer A</p><p>Eigentümer land- und forstwirtschaftlicher Flächen zahlen diese Steuer. Die Kommune legt den Hebesatz fest, mit dem der Steuermessbetrag multipliziert wird.</p></div><div class="example ex-grB"><p class="ex-title">Grundsteuer B</p><p>Eigentümer bebauter und unbebauter Grundstücke zahlen diese Steuer, Mieter meist über die Nebenkosten. Die Kommune legt den Hebesatz fest, mit dem der Steuermessbetrag multipliziert wird.</p></div><div class="example ex-gewSt"><p class="ex-title">Gewerbesteuer</p><p>Unternehmen mit Gewerbebetrieb zahlen sie, abhängig von ihrem Gewinn. Die Kommune legt den Hebesatz fest; die Angabe auf dieser Seite ist vor der Gewerbesteuerumlage.</p></div>
     </div>
-  </div>
-  <div class="panel">
-    <h3 class="section">Entwicklung zum Vorjahr</h3>
-    <p class="hint">Vergleich 2024 und 2025. Gemeindesteuern brutto.</p>
-    <table class="cmpt">
-      <thead><tr><th>Kennzahl</th><th>2024</th><th>2025</th><th>Veränderung</th></tr></thead>
-      <tbody>
-        <tr><td>Gemeindesteuern</td><td>12,1 Mio. €</td><td>11,8 Mio. €</td><td class="down">&minus;2,7 %</td></tr>
-        <tr><td>Pro Einwohner</td><td>929 €</td><td>903 €</td><td>&minus;2,8 %</td></tr>
-        <tr><td>Einwohner</td><td>13.069</td><td>13.071</td><td>+0,0 %</td></tr>
-        <tr><td>Hebesatz Grundsteuer A</td><td>240 %</td><td>240 %</td><td>±0 Pkt.</td></tr>
-        <tr><td>Hebesatz Grundsteuer B</td><td>395 %</td><td>392 %</td><td>&minus;3 Pkt.</td></tr>
-        <tr><td>Hebesatz Gewerbesteuer</td><td>395 %</td><td>395 %</td><td>±0 Pkt.</td></tr>
-      </tbody>
-    </table>
   </div>
   <div class="panel">
     <h3 class="section">Einordnung im Saarland</h3>
@@ -5521,21 +4891,6 @@ footer.note{font-size:.78rem;color:var(--muted);margin-top:18px;line-height:1.6}
     </div>
   </div>
   <div class="panel">
-    <h3 class="section">Entwicklung zum Vorjahr</h3>
-    <p class="hint">Vergleich 2024 und 2025. Gemeindesteuern brutto.</p>
-    <table class="cmpt">
-      <thead><tr><th>Kennzahl</th><th>2024</th><th>2025</th><th>Veränderung</th></tr></thead>
-      <tbody>
-        <tr><td>Gemeindesteuern</td><td>65,5 Mio. €</td><td>69,0 Mio. €</td><td class="up">+5,4 %</td></tr>
-        <tr><td>Pro Einwohner</td><td>1.842 €</td><td>1.954 €</td><td>+6,1 %</td></tr>
-        <tr><td>Einwohner</td><td>35.546</td><td>35.315</td><td>&minus;0,6 %</td></tr>
-        <tr><td>Hebesatz Grundsteuer A</td><td>260 %</td><td>260 %</td><td>±0 Pkt.</td></tr>
-        <tr><td>Hebesatz Grundsteuer B</td><td>675 %</td><td>675 %</td><td>±0 Pkt.</td></tr>
-        <tr><td>Hebesatz Gewerbesteuer</td><td>390 %</td><td>390 %</td><td>±0 Pkt.</td></tr>
-      </tbody>
-    </table>
-  </div>
-  <div class="panel">
     <h3 class="section">Einordnung im Saarland</h3>
     <p class="rank" style="font-size:.95rem"><strong>St.Ingbert</strong> liegt beim Steueraufkommen pro Kopf im Saarland mit 1.954 € auf dem <strong>5. Platz</strong> von 52 Kommunen, 37,2 % über dem Landesschnitt von 1.424 €.</p>
     <p class="hint">Gemeindesteuern pro Einwohner, alle 52 Kommunen. Kommune anklicken, um sie anzuzeigen.</p>
@@ -5576,21 +4931,6 @@ footer.note{font-size:.78rem;color:var(--muted);margin-top:18px;line-height:1.6}
       <p class="hint" style="margin-top:12px">Der Hebesatz legt fest, wie viel Steuer auf die Grundlage entfällt. Die Kommune setzt ihn selbst fest. Hebesatz anklicken, um das Rechenbeispiel zu sehen.</p>
       <div class="example ex-grA"><p class="ex-title">Grundsteuer A</p><p>Eigentümer land- und forstwirtschaftlicher Flächen zahlen diese Steuer. Die Kommune legt den Hebesatz fest, mit dem der Steuermessbetrag multipliziert wird.</p></div><div class="example ex-grB"><p class="ex-title">Grundsteuer B</p><p>Eigentümer bebauter und unbebauter Grundstücke zahlen diese Steuer, Mieter meist über die Nebenkosten. Die Kommune legt den Hebesatz fest, mit dem der Steuermessbetrag multipliziert wird.</p></div><div class="example ex-gewSt"><p class="ex-title">Gewerbesteuer</p><p>Unternehmen mit Gewerbebetrieb zahlen sie, abhängig von ihrem Gewinn. Die Kommune legt den Hebesatz fest; die Angabe auf dieser Seite ist vor der Gewerbesteuerumlage.</p></div>
     </div>
-  </div>
-  <div class="panel">
-    <h3 class="section">Entwicklung zum Vorjahr</h3>
-    <p class="hint">Vergleich 2024 und 2025. Gemeindesteuern brutto.</p>
-    <table class="cmpt">
-      <thead><tr><th>Kennzahl</th><th>2024</th><th>2025</th><th>Veränderung</th></tr></thead>
-      <tbody>
-        <tr><td>Gemeindesteuern</td><td>37,7 Mio. €</td><td>40,7 Mio. €</td><td class="up">+7,8 %</td></tr>
-        <tr><td>Pro Einwohner</td><td>1.483 €</td><td>1.602 €</td><td>+8,0 %</td></tr>
-        <tr><td>Einwohner</td><td>25.430</td><td>25.390</td><td>&minus;0,2 %</td></tr>
-        <tr><td>Hebesatz Grundsteuer A</td><td>300 %</td><td>300 %</td><td>±0 Pkt.</td></tr>
-        <tr><td>Hebesatz Grundsteuer B</td><td>400 %</td><td>380 %</td><td>&minus;20 Pkt.</td></tr>
-        <tr><td>Hebesatz Gewerbesteuer</td><td>450 %</td><td>460 %</td><td>+10 Pkt.</td></tr>
-      </tbody>
-    </table>
   </div>
   <div class="panel">
     <h3 class="section">Einordnung im Saarland</h3>
@@ -5635,21 +4975,6 @@ footer.note{font-size:.78rem;color:var(--muted);margin-top:18px;line-height:1.6}
     </div>
   </div>
   <div class="panel">
-    <h3 class="section">Entwicklung zum Vorjahr</h3>
-    <p class="hint">Vergleich 2024 und 2025. Gemeindesteuern brutto.</p>
-    <table class="cmpt">
-      <thead><tr><th>Kennzahl</th><th>2024</th><th>2025</th><th>Veränderung</th></tr></thead>
-      <tbody>
-        <tr><td>Gemeindesteuern</td><td>29,7 Mio. €</td><td>26,3 Mio. €</td><td class="down">&minus;11,5 %</td></tr>
-        <tr><td>Pro Einwohner</td><td>1.810 €</td><td>1.617 €</td><td>&minus;10,7 %</td></tr>
-        <tr><td>Einwohner</td><td>16.406</td><td>16.253</td><td>&minus;0,9 %</td></tr>
-        <tr><td>Hebesatz Grundsteuer A</td><td>250 %</td><td>250 %</td><td>±0 Pkt.</td></tr>
-        <tr><td>Hebesatz Grundsteuer B</td><td>439 %</td><td>482 %</td><td>+43 Pkt.</td></tr>
-        <tr><td>Hebesatz Gewerbesteuer</td><td>430 %</td><td>430 %</td><td>±0 Pkt.</td></tr>
-      </tbody>
-    </table>
-  </div>
-  <div class="panel">
     <h3 class="section">Einordnung im Saarland</h3>
     <p class="rank" style="font-size:.95rem"><strong>Sulzbach</strong> liegt beim Steueraufkommen pro Kopf im Saarland mit 1.617 € auf dem <strong>9. Platz</strong> von 52 Kommunen, 13,5 % über dem Landesschnitt von 1.424 €.</p>
     <p class="hint">Gemeindesteuern pro Einwohner, alle 52 Kommunen. Kommune anklicken, um sie anzuzeigen.</p>
@@ -5690,21 +5015,6 @@ footer.note{font-size:.78rem;color:var(--muted);margin-top:18px;line-height:1.6}
       <p class="hint" style="margin-top:12px">Der Hebesatz legt fest, wie viel Steuer auf die Grundlage entfällt. Die Kommune setzt ihn selbst fest. Hebesatz anklicken, um das Rechenbeispiel zu sehen.</p>
       <div class="example ex-grA"><p class="ex-title">Grundsteuer A</p><p>Eigentümer land- und forstwirtschaftlicher Flächen zahlen diese Steuer. Die Kommune legt den Hebesatz fest, mit dem der Steuermessbetrag multipliziert wird.</p></div><div class="example ex-grB"><p class="ex-title">Grundsteuer B</p><p>Eigentümer bebauter und unbebauter Grundstücke zahlen diese Steuer, Mieter meist über die Nebenkosten. Die Kommune legt den Hebesatz fest, mit dem der Steuermessbetrag multipliziert wird.</p></div><div class="example ex-gewSt"><p class="ex-title">Gewerbesteuer</p><p>Unternehmen mit Gewerbebetrieb zahlen sie, abhängig von ihrem Gewinn. Die Kommune legt den Hebesatz fest; die Angabe auf dieser Seite ist vor der Gewerbesteuerumlage.</p></div>
     </div>
-  </div>
-  <div class="panel">
-    <h3 class="section">Entwicklung zum Vorjahr</h3>
-    <p class="hint">Vergleich 2024 und 2025. Gemeindesteuern brutto.</p>
-    <table class="cmpt">
-      <thead><tr><th>Kennzahl</th><th>2024</th><th>2025</th><th>Veränderung</th></tr></thead>
-      <tbody>
-        <tr><td>Gemeindesteuern</td><td>12,0 Mio. €</td><td>15,4 Mio. €</td><td class="up">+28,5 %</td></tr>
-        <tr><td>Pro Einwohner</td><td>968 €</td><td>1.250 €</td><td>+29,1 %</td></tr>
-        <tr><td>Einwohner</td><td>12.421</td><td>12.363</td><td>&minus;0,5 %</td></tr>
-        <tr><td>Hebesatz Grundsteuer A</td><td>340 %</td><td>340 %</td><td>±0 Pkt.</td></tr>
-        <tr><td>Hebesatz Grundsteuer B</td><td>450 %</td><td>410 %</td><td>&minus;40 Pkt.</td></tr>
-        <tr><td>Hebesatz Gewerbesteuer</td><td>425 %</td><td>425 %</td><td>±0 Pkt.</td></tr>
-      </tbody>
-    </table>
   </div>
   <div class="panel">
     <h3 class="section">Einordnung im Saarland</h3>
@@ -5749,21 +5059,6 @@ footer.note{font-size:.78rem;color:var(--muted);margin-top:18px;line-height:1.6}
     </div>
   </div>
   <div class="panel">
-    <h3 class="section">Entwicklung zum Vorjahr</h3>
-    <p class="hint">Vergleich 2024 und 2025. Gemeindesteuern brutto.</p>
-    <table class="cmpt">
-      <thead><tr><th>Kennzahl</th><th>2024</th><th>2025</th><th>Veränderung</th></tr></thead>
-      <tbody>
-        <tr><td>Gemeindesteuern</td><td>41,4 Mio. €</td><td>40,5 Mio. €</td><td class="down">&minus;2,1 %</td></tr>
-        <tr><td>Pro Einwohner</td><td>1.012 €</td><td>995 €</td><td>&minus;1,7 %</td></tr>
-        <tr><td>Einwohner</td><td>40.895</td><td>40.708</td><td>&minus;0,5 %</td></tr>
-        <tr><td>Hebesatz Grundsteuer A</td><td>290 %</td><td>290 %</td><td>±0 Pkt.</td></tr>
-        <tr><td>Hebesatz Grundsteuer B</td><td>605 %</td><td>605 %</td><td>±0 Pkt.</td></tr>
-        <tr><td>Hebesatz Gewerbesteuer</td><td>460 %</td><td>460 %</td><td>±0 Pkt.</td></tr>
-      </tbody>
-    </table>
-  </div>
-  <div class="panel">
     <h3 class="section">Einordnung im Saarland</h3>
     <p class="rank" style="font-size:.95rem"><strong>Völklingen</strong> liegt beim Steueraufkommen pro Kopf im Saarland mit 995 € auf dem <strong>30. Platz</strong> von 52 Kommunen, 30,1 % unter dem Landesschnitt von 1.424 €.</p>
     <p class="hint">Gemeindesteuern pro Einwohner, alle 52 Kommunen. Kommune anklicken, um sie anzuzeigen.</p>
@@ -5804,21 +5099,6 @@ footer.note{font-size:.78rem;color:var(--muted);margin-top:18px;line-height:1.6}
       <p class="hint" style="margin-top:12px">Der Hebesatz legt fest, wie viel Steuer auf die Grundlage entfällt. Die Kommune setzt ihn selbst fest. Hebesatz anklicken, um das Rechenbeispiel zu sehen.</p>
       <div class="example ex-grA"><p class="ex-title">Grundsteuer A</p><p>Eigentümer land- und forstwirtschaftlicher Flächen zahlen diese Steuer. Die Kommune legt den Hebesatz fest, mit dem der Steuermessbetrag multipliziert wird.</p></div><div class="example ex-grB"><p class="ex-title">Grundsteuer B</p><p>Eigentümer bebauter und unbebauter Grundstücke zahlen diese Steuer, Mieter meist über die Nebenkosten. Die Kommune legt den Hebesatz fest, mit dem der Steuermessbetrag multipliziert wird.</p></div><div class="example ex-gewSt"><p class="ex-title">Gewerbesteuer</p><p>Unternehmen mit Gewerbebetrieb zahlen sie, abhängig von ihrem Gewinn. Die Kommune legt den Hebesatz fest; die Angabe auf dieser Seite ist vor der Gewerbesteuerumlage.</p></div>
     </div>
-  </div>
-  <div class="panel">
-    <h3 class="section">Entwicklung zum Vorjahr</h3>
-    <p class="hint">Vergleich 2024 und 2025. Gemeindesteuern brutto.</p>
-    <table class="cmpt">
-      <thead><tr><th>Kennzahl</th><th>2024</th><th>2025</th><th>Veränderung</th></tr></thead>
-      <tbody>
-        <tr><td>Gemeindesteuern</td><td>17,2 Mio. €</td><td>22,7 Mio. €</td><td class="up">+31,8 %</td></tr>
-        <tr><td>Pro Einwohner</td><td>1.041 €</td><td>1.376 €</td><td>+32,2 %</td></tr>
-        <tr><td>Einwohner</td><td>16.536</td><td>16.482</td><td>&minus;0,3 %</td></tr>
-        <tr><td>Hebesatz Grundsteuer A</td><td>320 %</td><td>320 %</td><td>±0 Pkt.</td></tr>
-        <tr><td>Hebesatz Grundsteuer B</td><td>460 %</td><td>460 %</td><td>±0 Pkt.</td></tr>
-        <tr><td>Hebesatz Gewerbesteuer</td><td>445 %</td><td>455 %</td><td>+10 Pkt.</td></tr>
-      </tbody>
-    </table>
   </div>
   <div class="panel">
     <h3 class="section">Einordnung im Saarland</h3>
@@ -5863,21 +5143,6 @@ footer.note{font-size:.78rem;color:var(--muted);margin-top:18px;line-height:1.6}
     </div>
   </div>
   <div class="panel">
-    <h3 class="section">Entwicklung zum Vorjahr</h3>
-    <p class="hint">Vergleich 2024 und 2025. Gemeindesteuern brutto.</p>
-    <table class="cmpt">
-      <thead><tr><th>Kennzahl</th><th>2024</th><th>2025</th><th>Veränderung</th></tr></thead>
-      <tbody>
-        <tr><td>Gemeindesteuern</td><td>14,1 Mio. €</td><td>14,8 Mio. €</td><td class="up">+5,4 %</td></tr>
-        <tr><td>Pro Einwohner</td><td>780 €</td><td>822 €</td><td>+5,4 %</td></tr>
-        <tr><td>Einwohner</td><td>18.056</td><td>18.061</td><td>+0,0 %</td></tr>
-        <tr><td>Hebesatz Grundsteuer A</td><td>240 %</td><td>240 %</td><td>±0 Pkt.</td></tr>
-        <tr><td>Hebesatz Grundsteuer B</td><td>386 %</td><td>345 %</td><td>&minus;41 Pkt.</td></tr>
-        <tr><td>Hebesatz Gewerbesteuer</td><td>395 %</td><td>395 %</td><td>±0 Pkt.</td></tr>
-      </tbody>
-    </table>
-  </div>
-  <div class="panel">
     <h3 class="section">Einordnung im Saarland</h3>
     <p class="rank" style="font-size:.95rem"><strong>Wadgassen</strong> liegt beim Steueraufkommen pro Kopf im Saarland mit 822 € auf dem <strong>46. Platz</strong> von 52 Kommunen, 42,3 % unter dem Landesschnitt von 1.424 €.</p>
     <p class="hint">Gemeindesteuern pro Einwohner, alle 52 Kommunen. Kommune anklicken, um sie anzuzeigen.</p>
@@ -5918,21 +5183,6 @@ footer.note{font-size:.78rem;color:var(--muted);margin-top:18px;line-height:1.6}
       <p class="hint" style="margin-top:12px">Der Hebesatz legt fest, wie viel Steuer auf die Grundlage entfällt. Die Kommune setzt ihn selbst fest. Hebesatz anklicken, um das Rechenbeispiel zu sehen.</p>
       <div class="example ex-grA"><p class="ex-title">Grundsteuer A</p><p>Eigentümer land- und forstwirtschaftlicher Flächen zahlen diese Steuer. Die Kommune legt den Hebesatz fest, mit dem der Steuermessbetrag multipliziert wird.</p></div><div class="example ex-grB"><p class="ex-title">Grundsteuer B</p><p>Eigentümer bebauter und unbebauter Grundstücke zahlen diese Steuer, Mieter meist über die Nebenkosten. Die Kommune legt den Hebesatz fest, mit dem der Steuermessbetrag multipliziert wird.</p></div><div class="example ex-gewSt"><p class="ex-title">Gewerbesteuer</p><p>Unternehmen mit Gewerbebetrieb zahlen sie, abhängig von ihrem Gewinn. Die Kommune legt den Hebesatz fest; die Angabe auf dieser Seite ist vor der Gewerbesteuerumlage.</p></div>
     </div>
-  </div>
-  <div class="panel">
-    <h3 class="section">Entwicklung zum Vorjahr</h3>
-    <p class="hint">Vergleich 2024 und 2025. Gemeindesteuern brutto.</p>
-    <table class="cmpt">
-      <thead><tr><th>Kennzahl</th><th>2024</th><th>2025</th><th>Veränderung</th></tr></thead>
-      <tbody>
-        <tr><td>Gemeindesteuern</td><td>6,8 Mio. €</td><td>7,1 Mio. €</td><td class="up">+4,3 %</td></tr>
-        <tr><td>Pro Einwohner</td><td>720 €</td><td>763 €</td><td>+6,0 %</td></tr>
-        <tr><td>Einwohner</td><td>9.419</td><td>9.273</td><td>&minus;1,6 %</td></tr>
-        <tr><td>Hebesatz Grundsteuer A</td><td>300 %</td><td>300 %</td><td>±0 Pkt.</td></tr>
-        <tr><td>Hebesatz Grundsteuer B</td><td>350 %</td><td>310 %</td><td>&minus;40 Pkt.</td></tr>
-        <tr><td>Hebesatz Gewerbesteuer</td><td>390 %</td><td>390 %</td><td>±0 Pkt.</td></tr>
-      </tbody>
-    </table>
   </div>
   <div class="panel">
     <h3 class="section">Einordnung im Saarland</h3>
@@ -5977,21 +5227,6 @@ footer.note{font-size:.78rem;color:var(--muted);margin-top:18px;line-height:1.6}
     </div>
   </div>
   <div class="panel">
-    <h3 class="section">Entwicklung zum Vorjahr</h3>
-    <p class="hint">Vergleich 2024 und 2025. Gemeindesteuern brutto.</p>
-    <table class="cmpt">
-      <thead><tr><th>Kennzahl</th><th>2024</th><th>2025</th><th>Veränderung</th></tr></thead>
-      <tbody>
-        <tr><td>Gemeindesteuern</td><td>7,5 Mio. €</td><td>8,0 Mio. €</td><td class="up">+7,2 %</td></tr>
-        <tr><td>Pro Einwohner</td><td>1.136 €</td><td>1.230 €</td><td>+8,3 %</td></tr>
-        <tr><td>Einwohner</td><td>6.583</td><td>6.523</td><td>&minus;0,9 %</td></tr>
-        <tr><td>Hebesatz Grundsteuer A</td><td>450 %</td><td>350 %</td><td>&minus;100 Pkt.</td></tr>
-        <tr><td>Hebesatz Grundsteuer B</td><td>550 %</td><td>400 %</td><td>&minus;150 Pkt.</td></tr>
-        <tr><td>Hebesatz Gewerbesteuer</td><td>460 %</td><td>460 %</td><td>±0 Pkt.</td></tr>
-      </tbody>
-    </table>
-  </div>
-  <div class="panel">
     <h3 class="section">Einordnung im Saarland</h3>
     <p class="rank" style="font-size:.95rem"><strong>Weiskirchen</strong> liegt beim Steueraufkommen pro Kopf im Saarland mit 1.230 € auf dem <strong>24. Platz</strong> von 52 Kommunen, 13,6 % unter dem Landesschnitt von 1.424 €.</p>
     <p class="hint">Gemeindesteuern pro Einwohner, alle 52 Kommunen. Kommune anklicken, um sie anzuzeigen.</p>
@@ -6032,21 +5267,6 @@ footer.note{font-size:.78rem;color:var(--muted);margin-top:18px;line-height:1.6}
       <p class="hint" style="margin-top:12px">Der Hebesatz legt fest, wie viel Steuer auf die Grundlage entfällt. Die Kommune setzt ihn selbst fest. Hebesatz anklicken, um das Rechenbeispiel zu sehen.</p>
       <div class="example ex-grA"><p class="ex-title">Grundsteuer A</p><p>Eigentümer land- und forstwirtschaftlicher Flächen zahlen diese Steuer. Die Kommune legt den Hebesatz fest, mit dem der Steuermessbetrag multipliziert wird.</p></div><div class="example ex-grB"><p class="ex-title">Grundsteuer B</p><p>Eigentümer bebauter und unbebauter Grundstücke zahlen diese Steuer, Mieter meist über die Nebenkosten. Die Kommune legt den Hebesatz fest, mit dem der Steuermessbetrag multipliziert wird.</p></div><div class="example ex-gewSt"><p class="ex-title">Gewerbesteuer</p><p>Unternehmen mit Gewerbebetrieb zahlen sie, abhängig von ihrem Gewinn. Die Kommune legt den Hebesatz fest; die Angabe auf dieser Seite ist vor der Gewerbesteuerumlage.</p></div>
     </div>
-  </div>
-  <div class="panel">
-    <h3 class="section">Entwicklung zum Vorjahr</h3>
-    <p class="hint">Vergleich 2024 und 2025. Gemeindesteuern brutto.</p>
-    <table class="cmpt">
-      <thead><tr><th>Kennzahl</th><th>2024</th><th>2025</th><th>Veränderung</th></tr></thead>
-      <tbody>
-        <tr><td>Gemeindesteuern</td><td>18,1 Mio. €</td><td>19,5 Mio. €</td><td class="up">+7,9 %</td></tr>
-        <tr><td>Pro Einwohner</td><td>1.495 €</td><td>1.613 €</td><td>+7,9 %</td></tr>
-        <tr><td>Einwohner</td><td>12.116</td><td>12.117</td><td>+0,0 %</td></tr>
-        <tr><td>Hebesatz Grundsteuer A</td><td>405 %</td><td>405 %</td><td>±0 Pkt.</td></tr>
-        <tr><td>Hebesatz Grundsteuer B</td><td>435 %</td><td>435 %</td><td>±0 Pkt.</td></tr>
-        <tr><td>Hebesatz Gewerbesteuer</td><td>430 %</td><td>430 %</td><td>±0 Pkt.</td></tr>
-      </tbody>
-    </table>
   </div>
   <div class="panel">
     <h3 class="section">Einordnung im Saarland</h3>
